@@ -1,0 +1,715 @@
+<style type="text/css">
+    .primary-btn-two {
+    padding: 15px 35px !important;
+    border-radius: 50px !important;
+    }
+    .table-fill {
+    background: white;
+    border-radius: 3px;
+    border-collapse: collapse;
+    height: 100% !important;
+    /* margin: auto; */
+    /* max-width: 600px; */
+    padding: 5px;
+    width: 100% !important;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    animation: float 5s infinite;
+    }
+    .table-fill tr:nth-child(odd) td {
+    background: #d8e2eb;
+    padding: 10px;
+    border: 2px solid #b0afaf;
+    font-size: 16px;
+    }
+    .new_img_bg img {
+    max-width: 200px !important;
+    height: 76px !important;
+    }
+    .first-row td {
+    border: 2px solid #b0afaf;
+    background-color: #0a0a80 !important;
+    color: white !important;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 600;
+    padding: 15px;
+    }
+    td.text-lefty {
+    text-align: left;
+    padding: 10px;
+    border: 2px solid #b0afaf;
+    font-weight: 300;
+    }
+    td.text-left {
+    text-align: left;
+    padding: 10px;
+    border: 2px solid #b0afaf;
+    font-weight: 300;
+    }
+    .text-right-new{
+    text-align: right;
+    }
+</style>
+<!DOCTYPE html>
+<html lang="zxx">
+  
+<!-- Mirrored from paramnivesh.com/Payment by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 18 Aug 2025 08:20:56 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="format-detection" content="telephone=no">
+     <meta name="csrf-token" content="pQvhpi6XYxDMa2evRaif1ubRpkrohnsMCIhYWbj0">
+<link rel="stylesheet" href="public/webassets/css/swiper-bundle.min.css">
+
+<link rel="stylesheet" href="public/webassets/css/swiper-bundle.min.css">
+<link rel="stylesheet" href="public/webassets/css/jquery-ui.css">
+<link rel="stylesheet" href="public/webassets/css/boxicons.min.css">
+<link rel="stylesheet" href="public/webassets/css/bootstrap.min.css">
+<link rel="stylesheet" href="public/webassets/css/bootstrap-icons.css">
+<link rel="stylesheet" href="public/webassets/css/animate.min.css">
+
+<link rel="stylesheet" href="public/webassets/css/style.css">
+
+<!-- Main Css -->
+    <link href="assetData/css/style.css" rel="stylesheet" type="text/css">
+
+    <!-- Font Awesome 6 CDN -->
+    <link href="../cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <title>Param Nivesh</title>
+    <link rel="icon" href="public/webassets/image/new/fav-new.png">
+  </head>
+  <body>
+    <!-- scroll top -->
+    <div class="circle-container">
+      <svg class="circle-progress svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+      </svg>
+    </div>
+    <div class="right-sidebar-menu">
+      <div class="sidebar-logo-area d-flex justify-content-between align-items-center">
+        <div class="sidebar-logo-wrap">
+            <a href="#">
+                <img alt="image" src="public/webassets/image/new/paramLogo.png" />
+            </a>
+        </div>
+        <div class="right-sidebar-close-btn">
+          <i class="bi bi-x"></i>
+        </div>
+      </div>
+      <div class="contact-section-three">
+        <div class="container">
+          <div class="row justify-content-between">
+            <div class="col-xl-12 col-lg-12 wow animate fadeInRight" data-wow-delay="300ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 300ms;">
+              <div class="inquiry-form">
+                <div id="responseMessage"></div>
+              <form method="post" id="getintouchform">
+  <div class="title">
+    <h3>Get In Touch</h3>
+    <p>Send a message, our experts will get in touch with you shortly.</p>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <div class="form-inner mb-4">
+        <input type="text" placeholder="Full Name *" name="fullname" id="fullname">
+      </div>
+    </div>
+    <div class="col-md-12">
+      <div class="form-inner mb-4">
+        <input type="email" placeholder="Email *" name="email" id="email">
+      </div>
+    </div>
+    <div class="col-md-12">
+      <div class="form-inner mb-4">
+        <input type="text" placeholder="Phone *" name="phone" id="phone">
+      </div>
+    </div>
+    <div class="col-md-12">
+      <div class="form-inner mb-4">
+        <textarea placeholder="Write Message *" name="mesage" id="mesage"></textarea>
+      </div>
+    </div>
+  </div>
+  <div class="form-inner">
+    <button type="submit" class="primary-btn-two" data-text="Send Message">
+      <span>Send Message</span>
+    </button>
+  </div>
+</form>
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- sidebar menu end -->
+    <!-- header section start -->
+    <header class="header-area style-1">
+      <div class="container-fluid container-rextfy d-flex flex-nowrap align-items-center justify-content-between">
+        <div class="header-logo">
+          <a href="index.html"><img alt="image" class="img-fluid" src="public/webassets/image/new/paramLogo.png" /></a>
+        </div>
+        <div class="main-menu">
+          <div class="mobile-logo-area d-lg-none d-flex justify-content-center">
+            <div class="mobile-logo-wrap">
+              <a href="index.html"><img alt="image" class="img-fluid" src="public/webassets/image/new/paramLogo.png" /></a>
+            </div>
+          </div>
+          <ul class="menu-list">
+              
+              <li class="">
+    <a href="index.html" class="drop-down">Home</a>
+</li>
+
+<li class="">
+    <a href="aboutus.html" class="drop-down">About Us</a>
+</li>
+
+
+            <li class="menu-item-has-children">
+              <a href="#" class="drop-down">Compliance Corner</a>
+              <i class="bi bi-plus dropdown-icon"></i>
+              <ul class="sub-menu">
+                  
+                  <li class="">
+    <a href="investor-charter.html" class="drop-down">Investor Charter</a>
+</li>
+
+           
+                             <li class="">
+    <a href="complaint-data.html" class="drop-down">Complaint data</a>
+</li>
+
+                         <li class="">
+    <a href="grievance-redressal-framework.html" class="drop-down">Grievance Redressal Framework</a>
+</li>
+
+                         <li class="">
+    <a href="disclaimer.html" class="drop-down">Disclaimer and Disclosure</a>
+</li>
+
+
+            
+            
+              </ul>
+            </li>
+ <li class="menu-item-has-children ">
+  <a href="#" class="drop-down">Services</a><i class="bi bi-plus dropdown-icon"></i>
+  <ul class="sub-menu">
+          <li>
+        <a href="service-category/17.html">
+          Option
+        </a>
+      </li>
+          <li>
+        <a href="service-category/15.html">
+          Cash
+        </a>
+      </li>
+          <li>
+        <a href="service-category/16.html">
+          Future
+        </a>
+      </li>
+      </ul>
+</li>
+
+            
+                                  <li class="">
+    <a href="subscribe.html" class="drop-down">Subscribe</a>
+</li>
+
+
+
+<li class="menu-item-has-children">
+  <a href="#" class="drop-down">Algorithm</a>
+  <i class="bi bi-plus dropdown-icon"></i>
+  <ul class="sub-menu">
+          <li>
+        <a href="algo-category/8.html">
+          Algorithm
+        </a>
+      </li>
+      </ul>
+</li>
+
+
+       
+                                         <li class="active">
+    <a href="Payment.html" class="drop-down">Payment</a>
+</li>
+
+         
+          </ul>
+          <div class="btn-area d-lg-none d-flex justify-content-center">
+            <a class="primary-btn" href="tel:+911234567890">
+              <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M10.3708 10.8652L10.0671 11.1848C10.0671 11.1848 9.3454 11.9447 7.3754 9.87062C5.40541 7.79658 6.12713 7.03673 6.12713 7.03673L6.31835 6.83543C6.7894 6.33951 6.8338 5.54333 6.42283 4.96209L5.58217 3.77309C5.07352 3.05369 4.09064 2.95865 3.50763 3.57245L2.46123 4.67411C2.17215 4.97846 1.97843 5.37299 2.00193 5.81065C2.06203 6.93033 2.54047 9.33935 5.21024 12.1502C8.0414 15.1308 10.6979 15.2493 11.7842 15.1421C12.1278 15.1082 12.4266 14.9229 12.6674 14.6694L13.6145 13.6723C14.2537 12.9993 14.0735 11.8455 13.2555 11.3747L11.9819 10.6416C11.4448 10.3324 10.7905 10.4232 10.3708 10.8652Z"
+                  fill="white" />
+                <path
+                  d="M8.83982 2.41989C8.88395 2.1473 9.14162 1.96238 9.41422 2.00651C9.43109 2.00974 9.48542 2.01989 9.51382 2.02622C9.57075 2.0389 9.65009 2.0584 9.74902 2.08722C9.94689 2.14484 10.2233 2.23978 10.555 2.39187C11.2192 2.69638 12.1031 3.22904 13.0203 4.14624C13.9375 5.06344 14.4702 5.94731 14.7746 6.6115C14.9268 6.94325 15.0217 7.21965 15.0793 7.4175C15.1081 7.51644 15.1276 7.59579 15.1403 7.65267C15.1466 7.68112 15.1513 7.70396 15.1545 7.72084L15.1584 7.74163C15.2024 8.0142 15.0192 8.2826 14.7466 8.32674C14.4748 8.37073 14.2188 8.18667 14.1736 7.9154C14.1722 7.90807 14.1683 7.88854 14.1642 7.87007C14.156 7.83314 14.1418 7.77459 14.1192 7.69715C14.0741 7.54226 13.9958 7.31204 13.8656 7.02825C13.6058 6.46138 13.1384 5.67859 12.3132 4.85335C11.488 4.02811 10.7052 3.56078 10.1383 3.30089C9.85449 3.17079 9.62429 3.09244 9.46935 3.04732C9.39195 3.02476 9.29462 3.00242 9.25769 2.9942C8.98635 2.94898 8.79582 2.6917 8.83982 2.41989Z"
+                  fill="white" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M8.99055 4.71958C9.06642 4.45406 9.34315 4.30032 9.60868 4.37618L9.47135 4.85694C9.60868 4.37618 9.60868 4.37618 9.60868 4.37618L9.60968 4.37646L9.61068 4.37675L9.61288 4.3774L9.61808 4.37894L9.63128 4.38305C9.64128 4.38626 9.65388 4.39045 9.66882 4.39576C9.69875 4.40639 9.73835 4.4215 9.78688 4.4423C9.88402 4.48392 10.0167 4.5482 10.1797 4.64468C10.506 4.8378 10.9515 5.15858 11.4748 5.6819C11.9981 6.20522 12.3189 6.65067 12.512 6.97698C12.6085 7.13999 12.6727 7.2727 12.7144 7.36982C12.7352 7.41836 12.7503 7.45793 12.7609 7.48787C12.7663 7.50284 12.7704 7.51539 12.7737 7.52544L12.7777 7.53864L12.7793 7.5438L12.7799 7.54602L12.7802 7.54705C12.7802 7.54705 12.7805 7.54801 12.2997 7.68537L12.7805 7.54801C12.8564 7.81352 12.7026 8.09025 12.4371 8.16612C12.1739 8.24132 11.8995 8.09085 11.8209 7.82947L11.8185 7.82228C11.8149 7.81226 11.8076 7.79254 11.7953 7.76374C11.7706 7.70618 11.7259 7.61203 11.6515 7.4863C11.5028 7.23514 11.2343 6.85564 10.7677 6.389C10.3011 5.92237 9.92155 5.6539 9.67042 5.50526C9.54468 5.43084 9.45055 5.38611 9.39295 5.36144C9.36415 5.3491 9.34442 5.34174 9.33442 5.33819L9.32722 5.33573C9.06588 5.25714 8.91535 4.98284 8.99055 4.71958Z"
+                  fill="white" />
+              </svg>
+              Let’s Talk
+            </a>
+          </div>
+        </div>
+        <div class="nav-right d-flex jsutify-content-end align-items-center">
+          <a class="primary-btn d-lg-flex d-none right-sidebar-button">
+            <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M10.3708 10.8652L10.0671 11.1848C10.0671 11.1848 9.3454 11.9447 7.3754 9.87062C5.40541 7.79658 6.12713 7.03673 6.12713 7.03673L6.31835 6.83543C6.7894 6.33951 6.8338 5.54333 6.42283 4.96209L5.58217 3.77309C5.07352 3.05369 4.09064 2.95865 3.50763 3.57245L2.46123 4.67411C2.17215 4.97846 1.97843 5.37299 2.00193 5.81065C2.06203 6.93033 2.54047 9.33935 5.21024 12.1502C8.0414 15.1308 10.6979 15.2493 11.7842 15.1421C12.1278 15.1082 12.4266 14.9229 12.6674 14.6694L13.6145 13.6723C14.2537 12.9993 14.0735 11.8455 13.2555 11.3747L11.9819 10.6416C11.4448 10.3324 10.7905 10.4232 10.3708 10.8652Z"
+                fill="white" />
+              <path
+                d="M8.83982 2.41989C8.88395 2.1473 9.14162 1.96238 9.41422 2.00651C9.43109 2.00974 9.48542 2.01989 9.51382 2.02622C9.57075 2.0389 9.65009 2.0584 9.74902 2.08722C9.94689 2.14484 10.2233 2.23978 10.555 2.39187C11.2192 2.69638 12.1031 3.22904 13.0203 4.14624C13.9375 5.06344 14.4702 5.94731 14.7746 6.6115C14.9268 6.94325 15.0217 7.21965 15.0793 7.4175C15.1081 7.51644 15.1276 7.59579 15.1403 7.65267C15.1466 7.68112 15.1513 7.70396 15.1545 7.72084L15.1584 7.74163C15.2024 8.0142 15.0192 8.2826 14.7466 8.32674C14.4748 8.37073 14.2188 8.18667 14.1736 7.9154C14.1722 7.90807 14.1683 7.88854 14.1642 7.87007C14.156 7.83314 14.1418 7.77459 14.1192 7.69715C14.0741 7.54226 13.9958 7.31204 13.8656 7.02825C13.6058 6.46138 13.1384 5.67859 12.3132 4.85335C11.488 4.02811 10.7052 3.56078 10.1383 3.30089C9.85449 3.17079 9.62429 3.09244 9.46935 3.04732C9.39195 3.02476 9.29462 3.00242 9.25769 2.9942C8.98635 2.94898 8.79582 2.6917 8.83982 2.41989Z"
+                fill="white" />
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M8.99055 4.71958C9.06642 4.45406 9.34315 4.30032 9.60868 4.37618L9.47135 4.85694C9.60868 4.37618 9.60868 4.37618 9.60868 4.37618L9.60968 4.37646L9.61068 4.37675L9.61288 4.3774L9.61808 4.37894L9.63128 4.38305C9.64128 4.38626 9.65388 4.39045 9.66882 4.39576C9.69875 4.40639 9.73835 4.4215 9.78688 4.4423C9.88402 4.48392 10.0167 4.5482 10.1797 4.64468C10.506 4.8378 10.9515 5.15858 11.4748 5.6819C11.9981 6.20522 12.3189 6.65067 12.512 6.97698C12.6085 7.13999 12.6727 7.2727 12.7144 7.36982C12.7352 7.41836 12.7503 7.45793 12.7609 7.48787C12.7663 7.50284 12.7704 7.51539 12.7737 7.52544L12.7777 7.53864L12.7793 7.5438L12.7799 7.54602L12.7802 7.54705C12.7802 7.54705 12.7805 7.54801 12.2997 7.68537L12.7805 7.54801C12.8564 7.81352 12.7026 8.09025 12.4371 8.16612C12.1739 8.24132 11.8995 8.09085 11.8209 7.82947L11.8185 7.82228C11.8149 7.81226 11.8076 7.79254 11.7953 7.76374C11.7706 7.70618 11.7259 7.61203 11.6515 7.4863C11.5028 7.23514 11.2343 6.85564 10.7677 6.389C10.3011 5.92237 9.92155 5.6539 9.67042 5.50526C9.54468 5.43084 9.45055 5.38611 9.39295 5.36144C9.36415 5.3491 9.34442 5.34174 9.33442 5.33819L9.32722 5.33573C9.06588 5.25714 8.91535 4.98284 8.99055 4.71958Z"
+                fill="white" />
+            </svg>
+            Let’s Talk
+          </a>
+          <div class="right-sidebar-button">
+            <svg width="24" height="22" viewBox="0 0 20 18" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M1.29445 2.8421H10.5237C11.2389 2.8421 11.8182 2.2062 11.8182 1.42105C11.8182 0.635903 11.2389 0 10.5237 0H1.29445C0.579249 0 0 0.635903 0 1.42105C0 2.2062 0.579249 2.8421 1.29445 2.8421Z" />
+              <path
+                d="M1.23002 10.421H18.77C19.4496 10.421 20 9.78506 20 8.99991C20 8.21476 19.4496 7.57886 18.77 7.57886H1.23002C0.550421 7.57886 0 8.21476 0 8.99991C0 9.78506 0.550421 10.421 1.23002 10.421Z" />
+              <path
+                d="M18.8052 15.1579H10.2858C9.62563 15.1579 9.09094 15.7938 9.09094 16.5789C9.09094 17.3641 9.62563 18 10.2858 18H18.8052C19.4653 18 20 17.3641 20 16.5789C20 15.7938 19.4653 15.1579 18.8052 15.1579Z" />
+            </svg>
+          </div>
+          <div class="sidebar-button mobile-menu-btn">
+            <svg class="sidebar-toggle-button" width="25" height="25" viewBox="0 0 18 18"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M1.29608 0.0658336C0.609639 0.31147 0.139209 0.899069 0.0432028 1.63598C-0.0144009 2.09353 -0.0144009 5.4939 0.0432028 5.95146C0.129608 6.59686 0.489632 7.11703 1.07047 7.42046L1.36329 7.57458H3.83545H6.30761L6.59563 7.42046C6.96525 7.2278 7.25807 6.93401 7.45008 6.56314L7.60369 6.27416V3.79372V1.31328L7.45008 1.02429C7.25807 0.653433 6.96525 0.359633 6.59563 0.166978L6.30761 0.0128531L3.90745 0.00322056C1.83372 -0.00641251 1.4785 0.00322056 1.29608 0.0658336ZM6.2356 0.802741C6.52842 0.956866 6.65803 1.08209 6.79244 1.34699L6.90765 1.57336V3.80817V6.03816L6.74924 6.29824C6.53322 6.66429 6.2068 6.85694 5.74117 6.90029C5.54916 6.91956 4.55549 6.92437 3.52343 6.91474L1.65131 6.90029L1.41129 6.77025C1.12807 6.62094 1.00807 6.49571 0.854455 6.20191L0.739248 5.98518V3.79372V1.60226L0.854455 1.38552C1.05607 0.995397 1.33929 0.778659 1.74731 0.706413C1.85292 0.687148 2.85618 0.677515 3.97946 0.677515L6.01959 0.687148L6.2356 0.802741Z">
+              </path>
+              <path
+                d="M11.6647 0.0658336C10.9783 0.31147 10.5079 0.899069 10.4119 1.63598C10.3879 1.82863 10.3687 2.80154 10.3687 3.79372C10.3687 4.7859 10.3879 5.75881 10.4119 5.95146C10.4983 6.59686 10.8583 7.11703 11.4391 7.42046L11.7319 7.57458H14.2041H16.6763L16.9643 7.42046C17.3339 7.2278 17.6267 6.93401 17.8187 6.56314L17.9723 6.27416V3.79372V1.31328L17.8187 1.02429C17.6267 0.653433 17.3339 0.359633 16.9643 0.166978L16.6763 0.0128531L14.2761 0.00322056C12.2024 -0.00641251 11.8471 0.00322056 11.6647 0.0658336ZM16.6043 0.802741C16.9019 0.956866 17.0267 1.08209 17.1611 1.35181L17.2811 1.583L17.2763 3.79854C17.2763 5.73472 17.2667 6.03816 17.1995 6.1682C17.0555 6.45237 16.9067 6.61131 16.6475 6.7558L16.3882 6.90029H14.2041H12.02L11.7799 6.77025C11.4967 6.62094 11.3767 6.49571 11.2231 6.20191L11.1079 5.98518V3.79372V1.60226L11.2231 1.38552C11.4247 0.995397 11.7079 0.778659 12.116 0.706413C12.2216 0.687148 13.2248 0.677515 14.3481 0.677515L16.3882 0.687148L16.6043 0.802741Z">
+              </path>
+              <path
+                d="M1.29608 10.4693C0.609639 10.7149 0.139209 11.3025 0.0432028 12.0394C-0.0144009 12.497 -0.0144009 15.8973 0.0432028 16.3549C0.129608 17.0003 0.489632 17.5205 1.07047 17.8239L1.36329 17.978H3.83545H6.30761L6.59563 17.8239C6.96525 17.6312 7.25807 17.3374 7.45008 16.9666L7.60369 16.6776V14.1972V11.7167L7.45008 11.4277C7.25807 11.0569 6.96525 10.7631 6.59563 10.5704L6.30761 10.4163L3.90745 10.4067C1.83372 10.397 1.4785 10.4067 1.29608 10.4693ZM6.2356 11.2062C6.52842 11.3603 6.65803 11.4855 6.79244 11.7504L6.90765 11.9768V14.2116V16.4416L6.74924 16.7017C6.53322 17.0677 6.2068 17.2604 5.74117 17.3037C5.54916 17.323 4.55549 17.3278 3.52343 17.3182L1.65131 17.3037L1.41129 17.1737C1.12807 17.0244 1.00807 16.8992 0.854455 16.6054L0.739248 16.3886V14.1972V12.0057L0.854455 11.789C1.05607 11.3988 1.33929 11.1821 1.74731 11.1099C1.85292 11.0906 2.85618 11.081 3.97946 11.081L6.01959 11.0906L6.2356 11.2062Z">
+              </path>
+              <path
+                d="M13.2441 10.4934C11.8856 10.8498 10.8583 11.8853 10.5079 13.2531C10.3735 13.7781 10.3735 14.6162 10.5079 15.1412C10.8343 16.4127 11.732 17.3808 12.9945 17.8239C13.3593 17.9491 13.4937 17.9732 14.0601 17.9925C14.617 18.0117 14.7754 17.9973 15.1162 17.9106C16.5179 17.5542 17.5452 16.5283 17.9052 15.1219C18.0348 14.6162 18.03 13.7685 17.9004 13.2531C17.55 11.8757 16.5179 10.8401 15.145 10.4885C14.6314 10.3585 13.7529 10.3585 13.2441 10.4934ZM15.2314 11.2784C15.7066 11.4518 16.0475 11.6782 16.4363 12.0828C17.0075 12.6848 17.2763 13.3639 17.2763 14.2068C17.2763 15.0882 17.0075 15.7288 16.3691 16.3645C15.721 17.0099 15.0826 17.2796 14.2186 17.2845C13.7001 17.2845 13.3113 17.193 12.8121 16.957C12.5336 16.8221 12.3608 16.692 12.0392 16.3694C11.396 15.724 11.132 15.0882 11.132 14.1972C11.132 13.3495 11.396 12.6896 11.972 12.0828C12.3608 11.6782 12.7017 11.4518 13.1817 11.2736C13.7913 11.0521 14.6218 11.0521 15.2314 11.2784Z">
+              </path>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </header>
+
+      <script src="../code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+
+$(document).ready(function () {
+  $('#getintouchform').on('submit', function (e) {
+    e.preventDefault();
+    $('.error').remove();
+
+    let isValid = true;
+
+    const fullName = $('#fullname').val().trim();
+    const email = $('#email').val().trim();
+    const phone = $('#phone').val().trim();
+    const message = $('#mesage').val().trim();
+
+    if (!fullName) {
+
+      $('#fullname').after('<span class="error mb-3" style="color: red; display: block;">Full Name is required</span>');
+      isValid = false;
+    }
+
+    if (!email) {
+ 
+      $('#email').after('<span class="error mb-3" style="color: red; display: block;">Email is required</span>');
+      isValid = false;
+    }
+if (!phone) {
+  
+  $('#phone').after('<span class="error mb-3" style="color: red; display: block;">Phone is required</span>');
+  isValid = false;
+} else if (!/^\d{10}$/.test(phone)) {
+  
+  $('#phone').after('<span class="error mb-3" style="color: red; display: block;">Enter a valid 10-digit phone number</span>');
+  isValid = false;
+}
+
+
+    if (!message) {
+    
+      $('#mesage').after('<span class="error mb-3" style="color: red; display: block;">Message is required</span>');
+      isValid = false;
+    }
+
+    if (!isValid) return;
+
+    const formData = new FormData();
+    formData.append('fullname', fullName);
+    formData.append('email', email);
+    formData.append('phone', phone);
+    formData.append('mesage', message);
+    formData.append('_token', 'pQvhpi6XYxDMa2evRaif1ubRpkrohnsMCIhYWbj0'); // Laravel CSRF
+
+    $.ajax({
+      url: "https://paramnivesh.com/requestformaction", // Update to correct route
+      method: "POST",
+      data: formData,
+      processData: false,
+      contentType: false,
+      success: function (response) {
+        $('#responseMessage').html('<div class="alert alert-success">' + response.message + '</div>');
+        $('#getintouchform')[0].reset();
+        // Optional: redirect
+   location.reload();
+      },
+      error: function (xhr) {
+        let error = 'Something went wrong.';
+        if (xhr.status === 422 && xhr.responseJSON && xhr.responseJSON.message) {
+          error = xhr.responseJSON.message;
+        }
+        $('#responseMessage').html('<div class="alert alert-danger">' + error + '</div>');
+      }
+    });
+  });
+});
+
+</script>
+
+
+    <!-- banner-section-two start --><!-- breadcrumb-section start -->
+<div class="breadcrumb-section" style="background-image: url('public/webassets/image/banner-img/breadcrumb-img.png')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="banner-wrapper">
+                    <div class="banner-content">
+                        <h1>Payment</h1>
+                    </div>
+                    <div class="breadcrumb-list">
+                        <ul>
+                            <li>
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li><span>/</span></li>
+                            <li>
+                                <a href="#">Payment</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- breadcrumb-section end -->
+<!-- home1- service section start -->
+<div class="blog-details-page pt-120 pb-80">
+    <div class="container">
+        <div class="row justify-content-center mb-4">
+            <div class="col-lg-12 text-center">
+                <div>
+                    <div class="content-bottom-area">
+                        <a class="primary-btn-two" href="#" data-bs-toggle="modal" data-bs-target="#staticBackdropbuy">
+                        <span>Pay Online</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+                <div class="row justify-content-center">
+            <div class="col-12">
+                <!--<p class="text-center">No payment data available.</p>-->
+            </div>
+        </div>
+            </div>
+</div>
+
+
+  <!-- Footer Start -->
+    <footer class="bg-black mt-4">
+        <div class="container">
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6 pb-16 pt-16">
+                <div class="col-span-full lg:col-span-2">
+                    <div class="max-w-2xl mx-auto">
+                        <div class="flex items-center">
+                            <h1 class="text-white text-2xl">PARAM NIVESH</h1>
+                            <!-- <img src="assetData/images/algo-freaks.svg" alt="" class="h-10 me-5"> -->
+                        </div>
+                        <p class="text-gray-300 max-w-xs mt-6">This may include the company's address, phone number, email address, and links to social media profiles.</p>
+                    </div>
+
+                    <div class="mt-6 grid space-y-3">
+                        <a class="inline-flex items-center gap-x-4 text-gray-300 hover:text-gray-400 transition-all duration-300" href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                            Info@paramnivesh.com
+                        </a>
+
+                        <a class="inline-flex items-center gap-x-4 text-gray-300 hover:text-gray-400 transition-all duration-300" href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                            (888) 253 145 148
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-span-1">
+                    <h4 class="font-semibold text-gray-100 uppercase">Company</h4>
+    
+                    <div class="mt-6 grid space-y-3">
+                        <p><a class="inline-flex gap-x-2 text-base text-gray-300 hover:text-gray-400 transition-all duration-300" href="/aboutus.html">About</a></p>
+                        <p><a class="inline-flex gap-x-2 text-base text-gray-300 hover:text-gray-400 transition-all duration-300" href="/service-category/17.html">Services</a></p>
+                        <p><a class="inline-flex gap-x-2 text-base text-gray-300 hover:text-gray-400 transition-all duration-300" href="#">Portfolio</a></p>
+                        <!-- <p><a class="inline-flex gap-x-2 text-base text-gray-300 hover:text-gray-400 transition-all duration-300" href="#">Blog</a></p> -->
+                        <p><a class="inline-flex gap-x-2 text-base text-gray-300 hover:text-gray-400 transition-all duration-300" href="#">Contact</a></p>
+                    </div>
+                </div>
+    
+                <div class="col-span-1">
+                    <h4 class="font-semibold text-gray-100 uppercase">Product</h4>
+        
+                    <div class="mt-6 grid space-y-3">
+                        <p><a class="inline-flex gap-x-2 text-base text-gray-300 hover:text-gray-400 transition-all duration-300" href="#">Services</a></p>
+                        <p><a class="inline-flex gap-x-2 text-base text-gray-300 hover:text-gray-400 transition-all duration-300" href="#">About Us</a></p>
+                        <p><a class="inline-flex gap-x-2 text-base text-gray-300 hover:text-gray-400 transition-all duration-300" href="#">News & Stories</a></p>
+                        <p><a class="inline-flex gap-x-2 text-base text-gray-300 hover:text-gray-400 transition-all duration-300" href="#">Roadmap</a></p>
+                    </div>
+                </div>
+
+                <div class="col-span-1">
+                    <h4 class="font-semibold text-gray-100 uppercase">Important Links</h4>
+    
+                    <div class="mt-6 grid space-y-3">
+                        <p><a class="inline-flex gap-x-2 text-base text-gray-300 hover:text-gray-400 transition-all duration-300" href="#">Our Journeys</a></p>
+                        <p><a class="inline-flex gap-x-2 text-base text-gray-300 hover:text-gray-400 transition-all duration-300" href="#">Roadmap</a></p>
+                        <p><a class="inline-flex gap-x-2 text-base text-gray-300 hover:text-gray-400 transition-all duration-300" href="#">Pricing Plans</a></p>
+                        <p><a class="inline-flex gap-x-2 text-base text-gray-300 hover:text-gray-400 transition-all duration-300" href="#">Privacy Policy </a></p>
+                        <p><a class="inline-flex gap-x-2 text-base text-gray-300 hover:text-gray-400 transition-all duration-300" href="#">Terms & Conditions</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="py-4 bg-[#1C2940]">
+            <!-- 1B283F -->
+            <div class="container">
+                <div class="flex justify-between items-center">
+                    <p class="text-base text-white"><script>document.write(new Date().getFullYear())</script>© Param Nivesh - <a href="#">paramnivesh.com</a></p>
+
+                    <div>
+                        <a class="size-8 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-md border border-transparent text-white hover:bg-primary transition-all duration-300" href="#">
+                            <svg class="flex-shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                            </svg>
+                        </a>
+                        <a class="size-8 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-md border border-transparent text-white hover:bg-primary transition-all duration-300" href="#">
+                            <svg class="flex-shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                <path d="M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z"/>
+                            </svg>
+                        </a>
+                        <a class="size-8 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-md border border-transparent text-white hover:bg-primary transition-all duration-300" href="#">
+                            <svg class="flex-shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                            </svg>
+                        </a>
+                        <a class="size-8 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-md border border-transparent text-white hover:bg-primary transition-all duration-300" href="#">
+                            <svg class="flex-shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                            </svg>
+                        </a>
+                        <a class="size-8 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-md border border-transparent text-white hover:bg-primary transition-all duration-300" href="#">
+                            <svg class="flex-shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                <path d="M3.362 10.11c0 .926-.756 1.681-1.681 1.681S0 11.036 0 10.111C0 9.186.756 8.43 1.68 8.43h1.682v1.68zm.846 0c0-.924.756-1.68 1.681-1.68s1.681.756 1.681 1.68v4.21c0 .924-.756 1.68-1.68 1.68a1.685 1.685 0 0 1-1.682-1.68v-4.21zM5.89 3.362c-.926 0-1.682-.756-1.682-1.681S4.964 0 5.89 0s1.68.756 1.68 1.68v1.682H5.89zm0 .846c.924 0 1.68.756 1.68 1.681S6.814 7.57 5.89 7.57H1.68C.757 7.57 0 6.814 0 5.89c0-.926.756-1.682 1.68-1.682h4.21zm6.749 1.682c0-.926.755-1.682 1.68-1.682.925 0 1.681.756 1.681 1.681s-.756 1.681-1.68 1.681h-1.681V5.89zm-.848 0c0 .924-.755 1.68-1.68 1.68A1.685 1.685 0 0 1 8.43 5.89V1.68C8.43.757 9.186 0 10.11 0c.926 0 1.681.756 1.681 1.68v4.21zm-1.681 6.748c.926 0 1.682.756 1.682 1.681S11.036 16 10.11 16s-1.681-.756-1.681-1.68v-1.682h1.68zm0-.847c-.924 0-1.68-.755-1.68-1.68 0-.925.756-1.681 1.68-1.681h4.21c.924 0 1.68.756 1.68 1.68 0 .926-.756 1.681-1.68 1.681h-4.21z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+            
+            </div>
+        </div>
+    
+    </footer>
+    <!-- Footer End -->
+    <!-- Back to top -->
+    <a href="javascript: void(0);" onclick="topFunction()" id="back-to-top" class="back-to-top fixed text-base rounded-md z-10 bottom-8 right-8 h-8 w-8 text-center bg-primary text-white leading-9 justify-center items-center">
+        <i data-lucide="arrow-up" class="h-4 w-4 text-white stroke-2"></i>
+    </a>
+    <!-- Preline Js -->
+
+    <!-- Lucide Js -->
+    <script src="assetData/libs/lucide/umd/lucide.min.js"></script>
+
+    <!-- Main App Js -->
+    <script src="assetData/js/app.js" ></script>
+    <!-- Back to top -->
+
+
+    <!-- footer-section-two-end -->
+    <!--  Main jQuery  -->
+   <script src="../code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.html"></script>
+    <script src="assets/js/jquery-3.7.1.min.html"></script>
+    <!-- Popper and Bootstrap JS -->
+<script src="public/webassets/js/popper.min.js"></script>
+<script src="public/webassets/js/bootstrap.min.js"></script>
+<!-- Swiper slider JS -->
+<script src="public/webassets/js/swiper-bundle.min.js"></script>
+<!-- Counterup JS -->
+<script src="public/webassets/js/jquery.counterup.min.js"></script>
+<script src="public/webassets/js/waypoints.min.js"></script>
+<!-- Marquee JS -->
+<script src="public/webassets/js/jquery.marquee.min.js"></script>
+<script src="public/webassets/js/jquery.fancybox.min.js"></script>
+<!-- Wow JS -->
+<script src="public/webassets/js/wow.min.js"></script>
+<!-- GSAP JS -->
+<script src="public/webassets/js/gsap.min.js"></script>
+<script src="public/webassets/js/ScrollTrigger.min.js"></script>
+<!-- Main JS -->
+<script src="public/webassets/js/main.js"></script>
+
+    <script src="../cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/js/all.min.js"></script>
+  </body>
+
+<!-- Mirrored from paramnivesh.com/Payment by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 18 Aug 2025 08:20:56 GMT -->
+</html>
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdropbuy" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <!--<h1 class="modal-title fs-5" id="staticBackdropLabel">Information</h1>-->
+        <button type="button" class="btn-close buy-btn-closed text-primary" data-bs-dismiss="modal" aria-label="Close">
+          <i class="bi bi-x text-base"></i>
+        </button>
+      </div>
+      <div class="modal-body pt-0 pb-0">
+        <div class="row">
+            <div class="col-lg-12 contact-section-three p-0">
+                        <div class="inquiry-form mt-0 text-center">
+                <form method="post" id="getintouchformpay">
+          <input type="hidden">
+          <div class="title">
+            <h3>Pay Online</h3>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="form-inner mb-4">
+                <input type="text" placeholder="Full Name *" name="name" id="fullnamepay">
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="form-inner mb-4">
+                <input type="text" placeholder="Email *" name="email" id="emailpay">
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="form-inner mb-4">
+                <input type="text" placeholder="Phone *" name="phone" id="phonepay">
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="form-inner mb-4">
+<input type="number" placeholder="Enter Amount" name="amount" id="amountpay" min="1" >              </div>
+            </div>
+          </div>
+          <div class="form-inner">
+            <button type="submit" class="primary-btn-two" data-text="Submit">
+              <span>Submit</span>
+            </button>
+          </div>
+          <div id="responseMessage"></div>
+        </form>
+                    </div>
+            </div>            
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+$(document).ready(function () {
+  $('#getintouchformpay').on('submit', function (e) {
+    e.preventDefault();
+    $('.error').remove();
+
+    let isValid = true;
+
+    const fullnamepay = $('#fullnamepay').val().trim();
+    const emailpay = $('#emailpay').val().trim();
+    const phonepay = $('#phonepay').val().trim();
+    const amountpay = $('#amountpay').val().trim();
+
+    if (!fullnamepay) {
+
+      $('#fullnamepay').after('<span class="error mb-3" style="color: red; display: block;">Full Name is required</span>');
+      isValid = false;
+    }
+
+    if (!emailpay) {
+ 
+      $('#emailpay').after('<span class="error mb-3" style="color: red; display: block;">Email is required</span>');
+      isValid = false;
+    }
+if (!phonepay) {
+  
+  $('#phonepay').after('<span class="error mb-3" style="color: red; display: block;">Phone is required</span>');
+  isValid = false;
+} else if (!/^\d{10}$/.test(phonepay)) {
+  
+  $('#phonepay').after('<span class="error mb-3" style="color: red; display: block;">Enter a valid 10-digit phone number</span>');
+  isValid = false;
+}
+
+
+    if (!amountpay) {
+    
+      $('#amountpay').after('<span class="error mb-3" style="color: red; display: block;">Amount is required</span>');
+      isValid = false;
+    }
+
+    if (!isValid) return;
+    const formData = new FormData();
+    formData.append('fullnamepay', fullnamepay);
+    formData.append('emailpay', emailpay);
+    formData.append('phonepay', phonepay);
+    formData.append('amountpay', amountpay);
+    formData.append('_token', 'pQvhpi6XYxDMa2evRaif1ubRpkrohnsMCIhYWbj0'); // Laravel CSRF
+
+    $.ajax({
+      url: "https://paramnivesh.com/payumoney", // Update to correct route
+      method: "POST",
+      data: formData,
+      processData: false,
+      contentType: false,
+      success: function (response) {
+  if (response.status === 'success') {
+    // Inject PayU form into the DOM
+    $('body').append(response.form);
+    $('#payuForm').submit();
+  } else {
+    $('#responseMessage').html('<div class="alert alert-danger">' + response.message + '</div>');
+  }
+      },
+      error: function (xhr) {
+        let error = 'Something went wrong.';
+        if (xhr.status === 422 && xhr.responseJSON && xhr.responseJSON.message) {
+          error = xhr.responseJSON.message;
+        }
+        $('#responseMessage').html('<div class="alert alert-danger">' + error + '</div>');
+      }
+    });
+  });
+});
+
+</script>

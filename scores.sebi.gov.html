@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found</title>
+    <link rel="icon" href="https://magicweb.tk/mark-research/public/webassets/image/new/faviconnew.png">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        .main-div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #1a1a2e;
+            color: #ffffff;
+            overflow: hidden;
+        }
+        .container {
+            text-align: center;
+            position: relative;
+        }
+        .error-code {
+            font-size: 12rem;
+            font-weight: 900;
+            color: #10c581;
+            letter-spacing: 5px;
+        }
+        .message {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+        .back-home {
+            padding: 17px 35px;
+            background-color: #10c581;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+        .back-home:hover {
+            background-color: #111111;
+        }
+        .floating {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation: float 3s ease-in-out infinite;
+        }
+        @keyframes  float {
+            0%, 100% {
+                transform: translate(-50%, -50%) translateY(-10px);
+            }
+            50% {
+                transform: translate(-50%, -50%) translateY(10px);
+            }
+        }
+        .para-new{
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-div">
+    <div class="container">
+        <div class="floating">
+            <div class="error-code">404</div>
+            <div class="message">Oops! This Page is Not Found.</div>
+            <p class="para-new">
+                We can’t find the page your are looking for. You can check out our Help Center or head back to Homepage.
+            </p>
+            <a href="#" class="back-home">Go Back Home</a>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
