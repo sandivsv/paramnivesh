@@ -64,39 +64,39 @@
             <div class="col-xl-12 col-lg-12 wow animate fadeInRight" data-wow-delay="300ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 300ms;">
               <div class="inquiry-form">
                 <div id="responseMessage"></div>
-              <form method="post" id="getintouchform">
-  <div class="title">
-    <h3>Get In Touch</h3>
-    <p>Send a message, our experts will get in touch with you shortly.</p>
-  </div>
-  <div class="row">
-    <div class="col-md-12">
-      <div class="form-inner mb-4">
-        <input type="text" placeholder="Full Name *" name="fullname" id="fullname">
-      </div>
-    </div>
-    <div class="col-md-12">
-      <div class="form-inner mb-4">
-        <input type="email" placeholder="Email *" name="email" id="email">
-      </div>
-    </div>
-    <div class="col-md-12">
-      <div class="form-inner mb-4">
-        <input type="text" placeholder="Phone *" name="phone" id="phone">
-      </div>
-    </div>
-    <div class="col-md-12">
-      <div class="form-inner mb-4">
-        <textarea placeholder="Write Message *" name="mesage" id="mesage"></textarea>
-      </div>
-    </div>
-  </div>
-  <div class="form-inner">
-    <button type="submit" class="primary-btn-two" data-text="Send Message">
-      <span>Send Message</span>
-    </button>
-  </div>
-</form>
+                <form id="getintouchform">
+                    <div class="title">
+                        <h3>Get In Touch</h3>
+                        <p>Send a message, our experts will get in touch with you shortly.</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                        <div class="form-inner mb-4">
+                            <input type="text" placeholder="Full Name *" name="fullname" id="fullname">
+                        </div>
+                        </div>
+                        <div class="col-md-12">
+                        <div class="form-inner mb-4">
+                            <input type="email" placeholder="Email *" name="email" id="email">
+                        </div>
+                        </div>
+                        <div class="col-md-12">
+                        <div class="form-inner mb-4">
+                            <input type="text" placeholder="Phone *" name="phone" id="phone">
+                        </div>
+                        </div>
+                        <div class="col-md-12">
+                        <div class="form-inner mb-4">
+                            <textarea placeholder="Write Message *" name="mesage" id="mesage"></textarea>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="form-inner">
+                        <button type="submit" class="primary-btn-two text-gray-600 hover:text-white" data-text="Send Message">
+                        <span class="">Send Message</span>
+                        </button>
+                    </div>
+                </form>
 
 
               </div>
@@ -222,7 +222,7 @@
           </div>
         </div>
         <div class="nav-right d-flex jsutify-content-end align-items-center">
-          <a class="primary-btn d-lg-flex d-none right-sidebar-button">
+          <a class="primary-btn d-lg-flex d-none cursor-pointer">
             <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M10.3708 10.8652L10.0671 11.1848C10.0671 11.1848 9.3454 11.9447 7.3754 9.87062C5.40541 7.79658 6.12713 7.03673 6.12713 7.03673L6.31835 6.83543C6.7894 6.33951 6.8338 5.54333 6.42283 4.96209L5.58217 3.77309C5.07352 3.05369 4.09064 2.95865 3.50763 3.57245L2.46123 4.67411C2.17215 4.97846 1.97843 5.37299 2.00193 5.81065C2.06203 6.93033 2.54047 9.33935 5.21024 12.1502C8.0414 15.1308 10.6979 15.2493 11.7842 15.1421C12.1278 15.1082 12.4266 14.9229 12.6674 14.6694L13.6145 13.6723C14.2537 12.9993 14.0735 11.8455 13.2555 11.3747L11.9819 10.6416C11.4448 10.3324 10.7905 10.4232 10.3708 10.8652Z"
@@ -236,7 +236,7 @@
             </svg>
             Let’s Talk
           </a>
-          <div class="right-sidebar-button">
+          <!-- <div class="cursor-pointer">
             <svg width="24" height="22" viewBox="0 0 20 18" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M1.29445 2.8421H10.5237C11.2389 2.8421 11.8182 2.2062 11.8182 1.42105C11.8182 0.635903 11.2389 0 10.5237 0H1.29445C0.579249 0 0 0.635903 0 1.42105C0 2.2062 0.579249 2.8421 1.29445 2.8421Z" />
@@ -245,7 +245,7 @@
               <path
                 d="M18.8052 15.1579H10.2858C9.62563 15.1579 9.09094 15.7938 9.09094 16.5789C9.09094 17.3641 9.62563 18 10.2858 18H18.8052C19.4653 18 20 17.3641 20 16.5789C20 15.7938 19.4653 15.1579 18.8052 15.1579Z" />
             </svg>
-          </div>
+          </div> -->
           <div class="sidebar-button mobile-menu-btn">
             <svg class="sidebar-toggle-button" width="25" height="25" viewBox="0 0 18 18"
               xmlns="http://www.w3.org/2000/svg">
@@ -268,82 +268,6 @@
     </header>
 
       <script src="../code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
-
-$(document).ready(function () {
-  $('#getintouchform').on('submit', function (e) {
-    e.preventDefault();
-    $('.error').remove();
-
-    let isValid = true;
-
-    const fullName = $('#fullname').val().trim();
-    const email = $('#email').val().trim();
-    const phone = $('#phone').val().trim();
-    const message = $('#mesage').val().trim();
-
-    if (!fullName) {
-
-      $('#fullname').after('<span class="error mb-3" style="color: red; display: block;">Full Name is required</span>');
-      isValid = false;
-    }
-
-    if (!email) {
- 
-      $('#email').after('<span class="error mb-3" style="color: red; display: block;">Email is required</span>');
-      isValid = false;
-    }
-if (!phone) {
-  
-  $('#phone').after('<span class="error mb-3" style="color: red; display: block;">Phone is required</span>');
-  isValid = false;
-} else if (!/^\d{10}$/.test(phone)) {
-  
-  $('#phone').after('<span class="error mb-3" style="color: red; display: block;">Enter a valid 10-digit phone number</span>');
-  isValid = false;
-}
-
-
-    if (!message) {
-    
-      $('#mesage').after('<span class="error mb-3" style="color: red; display: block;">Message is required</span>');
-      isValid = false;
-    }
-
-    if (!isValid) return;
-
-    const formData = new FormData();
-    formData.append('fullname', fullName);
-    formData.append('email', email);
-    formData.append('phone', phone);
-    formData.append('mesage', message);
-    formData.append('_token', 'pQvhpi6XYxDMa2evRaif1ubRpkrohnsMCIhYWbj0'); // Laravel CSRF
-
-    $.ajax({
-      url: "https://paramnivesh.com/requestformaction", // Update to correct route
-      method: "POST",
-      data: formData,
-      processData: false,
-      contentType: false,
-      success: function (response) {
-        $('#responseMessage').html('<div class="alert alert-success">' + response.message + '</div>');
-        $('#getintouchform')[0].reset();
-        // Optional: redirect
-   location.reload();
-      },
-      error: function (xhr) {
-        let error = 'Something went wrong.';
-        if (xhr.status === 422 && xhr.responseJSON && xhr.responseJSON.message) {
-          error = xhr.responseJSON.message;
-        }
-        $('#responseMessage').html('<div class="alert alert-danger">' + error + '</div>');
-      }
-    });
-  });
-});
-
-</script>
-
 
 <!-- =========== Hero Section Start =========== -->
     <section
@@ -354,15 +278,20 @@ if (!phone) {
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 items-center">
                 <div class="text-sm py-20 px-10">
                     <span
-                        class="inline-flex py-2 text-lg text-black font-medium items-center justify-center rounded-full">
+                        class="inline-flex text-lg text-black font-medium items-center justify-center rounded-full">
                         <i data-lucide="minus"></i> SEBI REGISTERED </span>
+                    <div>
+                        <span
+                        class="inline-flex px-6 text-lg text-black items-center justify-center rounded-full">
+                         INH000016144 </span>
+                    </div>
                     <h1 class="md:text-6xl/tight text-3xl text-dark tracking-normal leading-normal font-bold mb-4 mt-6">
                         Our vision <span class="text-primary">Inspires</span>  and <span class="text-primary">leads us</span> </h1>
                     <p class="text-base font-medium text-muted leading-7 mt-5 capitalize">
                         Param Nivesh blends innovation with trust, delivering quality research solutions. Our goal is to be your trusted partner in insights and decisions.
                     </p>
                     <div class="flex flex-wrap items-center justify-center gap-3 lg:justify-normal mt-9">
-                        <a href="#" class="py-2 px-6 inline-flex items-center gap-2 rounded-md text-base text-white bg-primary hover:bg-primaryDark transition-all duration-500 font-medium">
+                        <a href="tel:+91 9993830999" class="py-2 px-6 inline-flex items-center gap-2 rounded-md text-base text-white bg-primary hover:bg-primaryDark transition-all duration-500 font-medium">
                             <i data-lucide="phone-forwarded" class="h-4 w-4 fill-white/40"></i>
                             <span class="">Call Now</span>
                         </a>
@@ -373,9 +302,9 @@ if (!phone) {
                 </div>
 
                 <div class="mt-4 pt-2 sm:mt-0 sm:pt-0 relative">
-                    <img src="/assetData/images/furniture.webp" alt="" class="h-[600px] max-w-full mx-auto">
+                    <img src="/assetData/images/furniture.webp" alt="" style="filter: brightness(1.5);" class="h-[600px] max-w-full mx-auto">
 
-                    <div class="absolute bottom-3/4 -end-14 2xl:end-8 hidden xl:block">
+                    <!-- <div class="absolute bottom-3/4 -end-14 2xl:end-8 hidden xl:block">
                         <div class="flex items-center gap-2 p-2 pe-6 rounded-full bg-white shadow-2xl">
                             <div class="rounded-full bg-primary h-9 w-9 items-center justify-center flex">
                                 <i data-lucide="codesandbox" class="h-6 w-6 text-white"></i>
@@ -384,10 +313,10 @@ if (!phone) {
                                 <h6 class="text-base font-medium text-default-900">Instant Strategy Deployment</h6>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
 
 
-                    <div class="absolute bottom-28 start-6 hidden xl:block">
+                    <a href="tel:+919993830999" class="absolute cursor-pointer bottom-28 start-6 hidden xl:block">
                         <div class="flex items-center gap-2 p-2 pe-6 rounded-full bg-white shadow-2xl">
                             <div class="rounded-full bg-primary h-9 w-9 items-center justify-center flex">
                                 <i data-lucide="headset" class="h-6 w-6 text-white"></i>
@@ -396,10 +325,18 @@ if (!phone) {
                                 <h6 class="text-base font-medium text-default-900">24x7 Customer Support</h6>
                             </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
             </div>
 
+            <div class="flex items-center justify-center">
+                <div class="flex flex-wrap items-center justify-center gap-3 lg:justify-normal mt-9">
+                    <a href="https://app.paramnivesh.com/#/register" traget="_blank" class="py-2 px-6 inline-flex items-center gap-2 rounded-md text-base text-white bg-primary hover:bg-primaryDark transition-all duration-500 font-medium">
+                        <span class="">Register for Enquiry</span>
+                        <i data-lucide="arrow-up-right" class="h-4 w-4 fill-white/40"></i>
+                    </a>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -410,7 +347,7 @@ if (!phone) {
                 <span
                     class="text-sm text-primary uppercase font-semibold tracking-wider text-default-950">Services</span>
                 <h2 class="text-3xl md:text-4xl/tight font-semibold text-black mt-4">
-                    Trusted Solutions – Every Project
+                    Trusted Solutions – Every Project replace it with smart investing begins with trusted research.
                 </h2>
                 <p class="text-base font-medium mt-4 text-muted">
                     Precision and professionalism in action
@@ -539,10 +476,11 @@ if (!phone) {
                 </div>
 
                 <div class="lg:ms-5 ms-8">
-                    <span class="text-sm text-primary uppercase font-semibold tracking-wider text-default-950">Focused
-                        on achievind</span>
+                    <!-- <span class="text-sm text-primary uppercase font-semibold tracking-wider text-default-950">
+                        Focused on achievind
+                    </span> -->
                     <h2 class="text-3xl md:text-4xl/tight font-semibold text-black mt-4">
-                        Services We Offer – Results We Deliver
+                        Services We Offer – Insights That Empower
                     </h2>
                     <a href="#"
                         class="inline-flex items-center justify-center gap-3 text-sm font-medium text-black mt-6">
@@ -563,8 +501,8 @@ if (!phone) {
                         <div>
                             <h4 class="text-xl font-semibold">Options</h4>
                             <p class="text-base font-normal text-gray-500 mt-2">
-                                Stock options strategies built to meet your goals,
-                                helping you trade smarter and with confidence.
+                                Tailored <span class="font-bold">options research strategies</span> designed to give you smarter entry & exit insights.
+                                Our analysis helps you navigate derivatives with confidence and discipline.
                             </p>
                         </div>
                     </div>
@@ -580,8 +518,8 @@ if (!phone) {
                         <div>
                             <h4 class="text-xl font-semibold">Cash</h4>
                             <p class="text-base font-normal text-gray-500 mt-2">
-                                Stock cash trades executed seamlessly,
-                                designed for reliable everyday performance.
+                                Focused equity research (cash market) backed by fundamentals and technicals, 
+                                helping you identify opportunities and build a stronger portfolio.
                             </p>
                         </div>
 
@@ -598,8 +536,8 @@ if (!phone) {
                         <div>
                             <h4 class="text-xl font-semibold">Futures</h4>
                             <p class="text-base font-normal text-gray-500 mt-2">
-                                Stock futures structured for precise planning,
-                                ensuring controlled and risk-managed trading.
+                                Well-researched <span class="font-bold">futures market insights</span>,
+                                structured for risk-managed decisions and precise market positioning.
                             </p>
                         </div>
 
@@ -617,10 +555,17 @@ if (!phone) {
         <div class="container">
             <div class="pb-10 lg:pb-0 flex flex-col items-center justify-center">
                 <h1 class="text-3xl md:text-4xl/tight font-semibold text-white text-center">
-                    We Know the Formula for Your Trading Success
+                    At Param Nivesh, we don’t just provide tips  
                 </h1>
-                <p class="text-base font-normal max-w-xl text-center mx-auto text-white mt-6">
-                    We navigate and empower the markets by leveraging both proven strategies and emerging opportunities to drive potential growth.
+                <!-- mt-6 -->
+                <p class="text-xl font-normal max-w-xl text-center mx-auto text-white mt-2">
+                    we deliver knowledge, discipline, and SEBI-compliant research that empowers your trading and investing journey.
+                </p>
+                <p class="text-base font-normal max-w-2xl text-center mx-auto text-white mt-4">
+                    We Know the Formula for Informed Investment Decisions.
+                    We empower investors with <span class="font-bold">research-backed insights, 
+                    disciplined strategies, and transparent guidance</span>, 
+                    helping you take smarter steps in the market.
                 </p>
 
                 <div class="grid lg:grid-cols-3 grid-cols-1 gap-8 p-6 mt-10">
@@ -631,9 +576,9 @@ if (!phone) {
                                 <i data-lucide="waves" class="h-8 w-8 text-black"></i>
                             </div>
                         </div>
-                        <h1 class="text-xl font-semibold text-white pt-6">1. Analyse & Aim</h1>
+                        <h1 class="text-xl font-semibold text-white pt-6">1. Research & Identify</h1>
                         <p class="text-base font-normal mt-2">
-                            Spot opportunities. Set clear goals. Build the foundation for your winning platform.
+                            Deep market analysis – spotting opportunities in equities, futures & options with data-driven precision.
                         </p>
                     </div>
 
@@ -644,9 +589,9 @@ if (!phone) {
                                 <i data-lucide="file-text" class="h-8 w-8 text-black"></i>
                             </div>
                         </div>
-                        <h1 class="text-xl font-semibold text-white pt-6">2. Build the Plan</h1>
+                        <h1 class="text-xl font-semibold text-white pt-6">2. Strategize & Guide</h1>
                         <p class="text-base font-normal mt-2">
-                            Craft a strategy with the right tech, tools, and trading logic for your brand.
+                            Crafting actionable insights and research calls tailored to your goals, backed by proven frameworks and SEBI-compliant processes.
                         </p>
                     </div>
 
@@ -657,18 +602,21 @@ if (!phone) {
                                 <i data-lucide="rocket" class="h-8 w-8 text-black"></i>
                             </div>
                         </div>
-                        <h1 class="text-xl font-semibold text-white pt-6">3. Launch & Win</h1>
+                        <h1 class="text-xl font-semibold text-white pt-6">3. Monitor & Refine</h1>
                         <p class="text-base font-normal mt-2">
-                            Go live fast, track performance, and keep improving for consistent growth.
+                            Regular performance tracking with updated insights, ensuring disciplined decision-making and continuous improvement.
                         </p>
                     </div>
                 </div>
 
+
+                
+
                 <div class="flex flex-wrap p-6 mt-6 gap-3">
-                    <button
+                    <a href="https://app.paramnivesh.com/#/register" target="_blank"
                         class="py-2 px-6 rounded-md text-white text-base bg-primary hover:bg-primaryDark border border-primary hover:border-primaryDark transition-all duration-500 font-medium">
                         Get Started Today
-                    </button>
+                    </a>
                     <button
                         class="py-2 px-6 rounded-md border border-white text-base hover:border-white hover:bg-white hover:text-primary transition-all duration-500 font-medium text-white ">
                         <span class="px-6">
@@ -676,12 +624,18 @@ if (!phone) {
                         </span>
                     </button>
                 </div>
+
+                <h1 class="text-2xl max-w-xl mt-6 font-semibold text-white text-center">
+                    At Param Nivesh, success isn’t about speculation – it’s about clarity, discipline, and trust in research
+                </h1>
             </div>
         </div>
     </section>
 
     <!-- About Start -->
-    <section id="about" class="py-20">
+
+
+    <!-- <section id="about" class="py-20">
         <div class="container">
 
             <div class="grid lg:grid-cols-2 items-center gap-6">
@@ -750,10 +704,15 @@ if (!phone) {
 
             </div>
         </div>
-    </section>
+    </section> -->
+
+
     <!-- About End -->
 
     <!-- Pricing Start -->
+
+
+    <!--     
     <section id="pricing" class="py-20">
         <div class="container">
             <div class="max-w-2xl mx-auto text-center">
@@ -929,6 +888,8 @@ if (!phone) {
             </div>
         </div>
     </section>
+     -->
+
     <!-- Pricing End-->
 
     <!-- Faqs Start -->
@@ -1085,7 +1046,9 @@ if (!phone) {
     <!-- Faqs End -->
 
     <!-- Testimonial Start -->
-    <section id="testimonial" class="py-20">
+
+
+    <!-- <section id="testimonial" class="py-20">
         <div class="container">
             <div class="">
                 <div class="text-center max-w-xl mx-auto">
@@ -1178,7 +1141,9 @@ if (!phone) {
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
+
+
     <!-- Testimonial End -->
 
 
@@ -1199,7 +1164,7 @@ if (!phone) {
                             <i data-lucide="map-pin" class="text-2xl text-primary"></i>
                         </div>
                         <div>
-                            <h5 class="text-base text-muted font-medium mb-1">123 King Street, London W60 10250</h5>
+                            <h5 class="text-base text-muted font-medium mb-1">102 Malaw anchal Plot no 22,<br/>Presse complex AB road Indore <br/>Madhya Pradesh PIN 452010</h5>
                             <a href="#" class="text-xs text-primary font-bold uppercase">See more</a>
                         </div>
                     </div>
@@ -1210,7 +1175,7 @@ if (!phone) {
                         </div>
                         <div>
                             <h5 class="text-base text-muted font-medium mb-1">support@paramnivesh.com</h5>
-                            <a href="#" class="text-xs text-primary font-bold uppercase">Say hello</a>
+                            <a href="mailto:support@paramnivesh.com" class="text-xs text-primary font-bold uppercase">Say hello</a>
                         </div>
                     </div>
 
@@ -1219,15 +1184,16 @@ if (!phone) {
                             <i data-lucide="smartphone" class="text-2xl text-primary"></i>
                         </div>
                         <div>
-                            <h5 class="text-base text-muted font-medium mb-1">(+01) 1234 5678 00</h5>
-                            <a href="#" class="text-xs text-primary font-bold uppercase">call now</a>
+                            <h5 class="text-base text-muted font-medium mb-1">(+91) 9993830999</h5>
+                            <a href="tel:+91 9993830999" class="text-xs text-primary font-bold uppercase">call now</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="lg:col-span-2 lg:ms-24">
                     <div class="p-6 md:p-12 rounded-md shadow-lg bg-white">
-                        <form>
+                        <div id="responseMessage2"></div>
+                        <form id="contactform2">
                             <div class="grid sm:grid-cols-2 gap-6">
                                 <div>
                                     <label for="formFirstName"
@@ -1295,18 +1261,20 @@ if (!phone) {
                             <h1 class="text-white text-2xl">PARAM NIVESH</h1>
                             <!-- <img src="assetData/images/algo-freaks.svg" alt="" class="h-10 me-5"> -->
                         </div>
-                        <p class="text-gray-300 max-w-xs mt-6">This may include the company's address, phone number, email address, and links to social media profiles.</p>
+                        <p class="text-gray-300 max-w-xs mt-6">
+                            At Param Nivesh, success isn’t about speculation – it’s about clarity, discipline, and trust in research
+                        </p>
                     </div>
 
                     <div class="mt-6 grid space-y-3">
-                        <a class="inline-flex items-center gap-x-4 text-gray-300 hover:text-gray-400 transition-all duration-300" href="#">
+                        <a class="inline-flex items-center gap-x-4 text-gray-300 hover:text-gray-400 transition-all duration-300" href="mailto:support@paramnivesh.com">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-                            Info@paramnivesh.com
+                            support@paramnivesh.com
                         </a>
 
-                        <a class="inline-flex items-center gap-x-4 text-gray-300 hover:text-gray-400 transition-all duration-300" href="#">
+                        <a class="inline-flex items-center gap-x-4 text-gray-300 hover:text-gray-400 transition-all duration-300" href="tel:+91 9993830999">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-                            (888) 253 145 148
+                            +91 9993830999
                         </a>
                     </div>
                 </div>
@@ -1315,11 +1283,11 @@ if (!phone) {
                     <h4 class="font-semibold text-gray-100 uppercase">Company</h4>
     
                     <div class="mt-6 grid space-y-3">
-                        <p><a class="inline-flex gap-x-2 text-base text-gray-300 hover:text-gray-400 transition-all duration-300" href="#">About</a></p>
-                        <p><a class="inline-flex gap-x-2 text-base text-gray-300 hover:text-gray-400 transition-all duration-300" href="#">Services</a></p>
-                        <p><a class="inline-flex gap-x-2 text-base text-gray-300 hover:text-gray-400 transition-all duration-300" href="#">Portfolio</a></p>
+                        <p><a class="inline-flex gap-x-2 text-base text-gray-300 hover:text-gray-400 transition-all duration-300" href="/aboutus.html">About</a></p>
+                        <p><a class="inline-flex gap-x-2 text-base text-gray-300 hover:text-gray-400 transition-all duration-300" href="/#features">Services</a></p>
+                        <p><a class="inline-flex gap-x-2 text-base text-gray-300 hover:text-gray-400 transition-all duration-300" href="/algo-category/8.html">Portfolio</a></p>
                         <!-- <p><a class="inline-flex gap-x-2 text-base text-gray-300 hover:text-gray-400 transition-all duration-300" href="#">Blog</a></p> -->
-                        <p><a class="inline-flex gap-x-2 text-base text-gray-300 hover:text-gray-400 transition-all duration-300" href="#">Contact</a></p>
+                        <p><a class="inline-flex gap-x-2 text-base text-gray-300 hover:text-gray-400 transition-all duration-300" href="/contactus.html">Contact</a></p>
                     </div>
                 </div>
     
@@ -1327,10 +1295,10 @@ if (!phone) {
                     <h4 class="font-semibold text-gray-100 uppercase">Product</h4>
         
                     <div class="mt-6 grid space-y-3">
-                        <p><a class="inline-flex gap-x-2 text-base text-gray-300 hover:text-gray-400 transition-all duration-300" href="#">Services</a></p>
-                        <p><a class="inline-flex gap-x-2 text-base text-gray-300 hover:text-gray-400 transition-all duration-300" href="#">About Us</a></p>
-                        <p><a class="inline-flex gap-x-2 text-base text-gray-300 hover:text-gray-400 transition-all duration-300" href="#">News & Stories</a></p>
-                        <p><a class="inline-flex gap-x-2 text-base text-gray-300 hover:text-gray-400 transition-all duration-300" href="#">Roadmap</a></p>
+                        <p><a class="inline-flex gap-x-2 text-base text-gray-300 hover:text-gray-400 transition-all duration-300" href="/#features">Services</a></p>
+                        <p><a class="inline-flex gap-x-2 text-base text-gray-300 hover:text-gray-400 transition-all duration-300" href="/aboutus.html">About Us</a></p>
+                        <p><a class="inline-flex gap-x-2 text-base text-gray-300 hover:text-gray-400 transition-all duration-300" href="/risk.html">Risk</a></p>
+                        <p><a class="inline-flex gap-x-2 text-base text-gray-300 hover:text-gray-400 transition-all duration-300" href="/faq.html">FAQ</a></p>
                     </div>
                 </div>
 
@@ -1338,11 +1306,11 @@ if (!phone) {
                     <h4 class="font-semibold text-gray-100 uppercase">Important Links</h4>
     
                     <div class="mt-6 grid space-y-3">
-                        <p><a class="inline-flex gap-x-2 text-base text-gray-300 hover:text-gray-400 transition-all duration-300" href="#">Our Journeys</a></p>
-                        <p><a class="inline-flex gap-x-2 text-base text-gray-300 hover:text-gray-400 transition-all duration-300" href="#">Roadmap</a></p>
-                        <p><a class="inline-flex gap-x-2 text-base text-gray-300 hover:text-gray-400 transition-all duration-300" href="#">Pricing Plans</a></p>
-                        <p><a class="inline-flex gap-x-2 text-base text-gray-300 hover:text-gray-400 transition-all duration-300" href="#">Privacy Policy </a></p>
-                        <p><a class="inline-flex gap-x-2 text-base text-gray-300 hover:text-gray-400 transition-all duration-300" href="#">Terms & Conditions</a></p>
+                        <p><a class="inline-flex gap-x-2 text-base text-gray-300 hover:text-gray-400 transition-all duration-300" href="/investor-charter.html">Investor Charter</a></p>
+                        <p><a class="inline-flex gap-x-2 text-base text-gray-300 hover:text-gray-400 transition-all duration-300" href="/disclaimer.html">Disclaimer</a></p>
+                        <p><a class="inline-flex gap-x-2 text-base text-gray-300 hover:text-gray-400 transition-all duration-300" href="/subscribe.html">Pricing Plans</a></p>
+                        <p><a class="inline-flex gap-x-2 text-base text-gray-300 hover:text-gray-400 transition-all duration-300" href="/privacy-policy.html">Privacy Policy </a></p>
+                        <p><a class="inline-flex gap-x-2 text-base text-gray-300 hover:text-gray-400 transition-all duration-300" href="/term.html">Terms & Conditions</a></p>
                     </div>
                 </div>
             </div>
@@ -1440,62 +1408,77 @@ if (!phone) {
 
 
 <script src="../code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
 <script>
-    $(document).ready(function () {
-        $('#requestform').on('submit', function (e) {
-            e.preventDefault();
-            $('.error').remove();
-            let isValid = true;
-    
-           
-            const fullname = $('#fullnamereq').val().trim();
-            const email = $('#emailreq').val().trim();
-            const phone = $('#phonereq').val().trim();
-    
-    
-            if (!fullname) {
-                $('#fullnamereq').after('<span class="error text-danger">This field is required</span>');
-                isValid = false;
-            }
-            if (!email) {
-                $('#emailreq').after('<span class="error text-danger">This field is required</span>');
-                isValid = false;
-            }
-            if (!phone) {
-                $('#phonereq').after('<span class="error text-danger">This field is required</span>');
-                isValid = false;
-            } else if (!/^\d{10}$/.test(phone)) {
-                $('#phonereq').after('<span class="error text-danger">Enter a valid 10-digit phone number</span>');
-                isValid = false;
-            }
-    
-            if (!isValid) return;
-    
-       
-            const formData = new FormData(this);
-    
-            $.ajax({
-                headers: {
-                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-                },
-                url: "https://paramnivesh.com/requestaction",
-                type: "POST",
-                data: formData,
-                contentType: false,
-                processData: false,
-                success: function (response) {
-                    alert(response.message);
-                    $('#responseMessage').html('<div class="alert alert-success">' + response.message + '</div>');
-                   location.reload();
-                },
-                error: function (xhr) {
-                    let errorMsg = 'Something went wrong.';
-                    if (xhr.responseJSON?.message) {
-                        errorMsg = xhr.responseJSON.message;
-                    }
-                    $('#responseMessage').html('<div class="alert alert-danger">' + errorMsg + '</div>');
-                }
-            });
-        });
-    });
+  // Script for Form 1
+  document.getElementById("getintouchform").addEventListener("submit", async function(e) {
+    e.preventDefault();
+
+    const payload = {
+      fullName: document.getElementById("fullname").value,
+      email: document.getElementById("email").value,
+      phone: document.getElementById("phone").value,
+      message: document.getElementById("mesage").value
+    };
+
+    console.log("Form 1 Payload:", payload);
+
+    try {
+      const res = await fetch("https://your-backend-api.com/submit", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload)
+      });
+
+      if (res.ok) {
+        document.getElementById("getintouchform").style.display = "none";
+        document.getElementById("responseMessage").innerHTML =
+          `<p style="color:green;font-weight:bold;">✅ Thank you! Your message has been sent.</p>`;
+      } else {
+        document.getElementById("responseMessage").innerHTML =
+          `<p style="color:red;font-weight:bold;">❌ Something went wrong. Please try again.</p>`;
+      }
+    } catch (error) {
+      console.error("Error:", error);
+      document.getElementById("responseMessage").innerHTML =
+        `<p style="color:red;font-weight:bold;">⚠️ Server not reachable.</p>`;
+    }
+  });
+
+
+  // Script for Form 2
+  document.getElementById("contactform2").addEventListener("submit", async function(e) {
+    e.preventDefault();
+
+    const payload = {
+      fullName: document.getElementById("formFirstName").value + " " + document.getElementById("formLastName").value,
+      email: document.getElementById("formEmail").value,
+      phone: document.getElementById("formPhone").value,
+      message: document.getElementById("formMessages").value
+    };
+
+    console.log("Form 2 Payload:", payload);
+
+    try {
+      const res = await fetch("https://your-backend-api.com/submit", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload)
+      });
+
+      if (res.ok) {
+        document.getElementById("contactform2").style.display = "none";
+        document.getElementById("responseMessage2").innerHTML =
+          `<p style="color:green;font-weight:bold;">✅ Thank you! We’ll contact you soon.</p>`;
+      } else {
+        document.getElementById("responseMessage2").innerHTML =
+          `<p style="color:red;font-weight:bold;">❌ Something went wrong. Please try again.</p>`;
+      }
+    } catch (error) {
+      console.error("Error:", error);
+      document.getElementById("responseMessage2").innerHTML =
+        `<p style="color:red;font-weight:bold;">⚠️ Server not reachable.</p>`;
+    }
+  });
 </script>

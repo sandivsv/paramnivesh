@@ -1871,7 +1871,7 @@ p{
 }
 .hover\:border-primaryDark:hover{
   --tw-border-opacity: 1 !important;
-  border-color: rgb(42 92 235 / var(--tw-border-opacity)) !important;
+  border-color: rgb(10 140 91 / var(--tw-border-opacity)) !important;
 }
 .hover\:border-white:hover{
   --tw-border-opacity: 1 !important;
@@ -1887,7 +1887,7 @@ p{
 }
 .hover\:bg-primaryDark:hover{
   --tw-bg-opacity: 1 !important;
-  background-color: rgb(42 92 235 / var(--tw-bg-opacity)) !important;
+  background-color: rgb(10 140 91 / var(--tw-bg-opacity)) !important;
 }
 .hover\:bg-white:hover{
   --tw-bg-opacity: 1 !important;
