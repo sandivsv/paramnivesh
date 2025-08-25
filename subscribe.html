@@ -1,168 +1,4 @@
-<style>
-    .packageContainer {
-    text-align: center;
-    }
-    .package {
-    /*      width: 935px;*/
-    /*      margin: 50px auto 20px;*/
-    border: 1px solid #CCC;
-    display: inline-block;
-    }
-    .fa {
-    color: #b9b9b9;
-    font-size: 18px;
-    font-style: normal;
-    margin-right: 5px;
-    width: 25px;
-    float: left;
-    }
-    .packageLeftBar {
-    width: 210px;
-    background: #fbfbfb;
-    float: left;
-    }
-    .packageLeftBar li, .packageDetails li {
-    padding: 15px 25px;
-    font-size: 20px;
-    font-weight: bold;
-    border-top: 1px dotted #CCC;
-    text-align: left;
-    }
-    .packageLeftBar li:first-child, .packageDetails li:first-child {
-    text-align: center;
-    padding: 30px;
-    border: none;
-    }
-    .packageLeftBar li:last-child, .packageDetails li:last-child {
-    padding: 30px 0;
-    background: #FFF;
-    }
-    .packageDetails {
-/*    width: 241px;*/
-    float: left;
-    position: relative;
-    border-left: 1px dotted #CCC;
-    }
-    .packageDetails:hover {
-    background: #FAFAFA;
-    }
-    .packageDetails .fa-times {
-    color: #d31c06;
-    }
-    .packageDetails .fa-check {
-    color: #7e9513;
-    }
-    .packageDetails li {
-    text-align: center;
-    }
-    .packageDetails li .fa {
-    text-align: center;
-    float: none;
-    line-height: 0;
-    }
-    .packageDetails li:first-child {
-    padding: 10px 10px;
-    }
-    .packageLeftBar li:first-child {
-    padding: 28px 10px 28px;
-    }
-    .packageDetails li:first-child span {
-    padding: 10px 0;
-    left: 50%;
-    margin-left: -65px;
-    width: 130px;
-    display: block;
-    background-color: #d9a702;
-    position: absolute;
-    top: -5px;
-    box-shadow: 3px 3px 0px #b68c03;
-    font-family: 'Exo', sans-serif;
-    font-weight: 400;
-    }
-    .packageDetails.yellow li:first-child {
-    background-color: #EBC137;
-    color: #FFF;
-    line-height: 16px;
-    }
-    .signUp {
-    padding: 8px 15px;
-    color: #FFF;
-    cursor: pointer;
-    text-decoration: none;
-    }
-    .packageDetails li:nth-child(2) {
-    padding: 40px 10px 25px;
-    border-top: 0;
-    color: #FFF;
-    font-size: 21px;
-    }
-    .packageDetails.yellow li:nth-child(2) {
-    background: #EBC137;
-    }
-    .packageDetails.yellow .signUp {
-    background-color: #d9a702;
-    box-shadow: 3px 3px 0px #b68c03;
-    }
-    .packageDetails.orange li:first-child {
-    background-color: #e69844;
-    color: #FFF;
-    line-height: 16px;
-    }
-    .packageDetails.orange li:first-child span {
-    background-color: #cf7a1c;
-    box-shadow: 3px 3px 0px #b36004;
-    }
-    .packageDetails.orange li:nth-child(2) {
-    background: #E38C2D;
-    }
-    .packageDetails.orange .signUp {
-    background-color: #cf7a1c;
-    box-shadow: 3px 3px 0px #b36004;
-    }
-    .packageDetails.red li:first-child {
-    background-color: #e84c3d;
-    color: #FFF;
-    line-height: 16px;
-    }
-    .packageDetails.red li:first-child span {
-    background-color: #b52918;
-    box-shadow: 3px 3px 0px #9c4239;
-    }
-    .packageDetails.red li:nth-child(2) {
-    background: #e84c3d;
-    }
-    .packageDetails.red .signUp {
-    background-color: #b52918;
-    box-shadow: 3px 3px 0px #9c4239;
-    }
-    .packageDetails.maroon li:first-child {
-    background-color: #771E10;
-    color: #FFF;
-    line-height: 16px;
-    }
-    .packageDetails.maroon li:first-child span {
-    background-color: #531106;
-    box-shadow: 3px 3px 0px #380a03;
-    }
-    .packageDetails.maroon li:nth-child(2) {
-    background: #771E10;
-    }
-    .packageDetails.maroon .signUp {
-    background-color: #531106;
-    box-shadow: 3px 3px 0px #380a03;
-    }
-    /*.packageDetails #economy li:nth-child(2) {
-    padding: 40px 10px 15px;
-    }*/
-    .packageDetails #economy li:nth-child(2) select {
-    margin-top: 14px;
-    }
-    #economy select {
-    border: 0;
-    outline: none;
-    padding: 3px 8px;
-    }
-</style>
+
 <!DOCTYPE html>
 <html lang="zxx">
   
@@ -192,6 +28,72 @@
     <link href="../cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
     <title>Param Nivesh</title>
     <link rel="icon" href="public/webassets/image/new/fav-new.png">
+
+    <style>
+        /* Apply a custom font and a light background color */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6; /* Light gray background for contrast */
+            color: #1f2937;
+        }
+
+
+
+        /* Custom styles for the period buttons */
+        .period-btn {
+          background-color: #e5e7eb; /* gray-200 */
+          color: #1f2937; /* gray-800 */
+          padding: 0.75rem 1.5rem; /* py-3 px-6 */
+          border-radius: 0.75rem; /* rounded-xl */
+          font-weight: 500; /* font-medium */
+          transition: all 0.3s ease;
+          transform: translateZ(0); /* transform-gpu */
+          box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05); /* shadow-sm */
+        }
+
+        .period-btn:hover {
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* shadow-md */
+        }
+
+        .period-btn.active {
+          background-color: var(--primary-color); /* purple-600 */
+          color: #ffffff;
+          box-shadow: 0 10px 15px rgba(0, 0, 0, 0.25); /* shadow-xl */
+          transform: scale(1.05);
+        }
+        
+        /* Keyframes for a subtle fade-in animation on cards and buttons */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animated-card, .animated-buttons {
+            animation: fadeIn 0.8s ease-out forwards;
+        }
+
+        /* Apply a slight upward shift on card hover */
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+
+        /* Gradient for the header text */
+        .gradient-text {
+          /* green  */
+            background-image: linear-gradient(to left, var(--primary-color), green);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
     <!-- scroll top -->
@@ -292,20 +194,39 @@
 </li>
 
            
-                             <li class="">
+<li class="">
     <a href="complaint-data.html" class="drop-down">Complaint data</a>
 </li>
 
-                         <li class="">
-    <a href="grievance-redressal-framework.html" class="drop-down">Grievance Redressal Framework</a>
+<li class="">
+    <a href="grievance-redressal-framework.html" class="drop-down">Grievance Redressal Policy</a>
+</li>
+
+<li class="">
+    <a href="privacy-policy.html" class="drop-down">Privacy Policy</a>
+</li>
+
+<li class="">
+    <a href="refund-policy.html" class="drop-down">Refund Policy</a>
+</li>
+<li class="">
+    <a href="term.html" class="drop-down">Terms & Conditions</a>
+</li>
+<li class="">
+    <a href="standard-warnings.html" class="drop-down">Standard Warnings</a>
+</li>
+<li class="">
+    <a href="other-information.html" class="drop-down">Other Information</a>
 </li>
 
                          <li class="">
-    <a href="disclaimer.html" class="drop-down">Disclaimer and Disclosure</a>
+    <a href="disclaimer.html" class="drop-down">Disclaimer</a>
 </li>
 
+<li class="">
+    <a href="disclosure.html" class="drop-down">Disclosure</a>
+</li>
 
-            
             
               </ul>
             </li>
@@ -332,12 +253,12 @@
 
             
                                   <li class="active">
-    <a href="subscribe.html" class="drop-down">Subscribe</a>
+    <a href="subscribe.html" class="drop-down">Pricing</a>
 </li>
 
 
 
-<li class="menu-item-has-children">
+<!-- <li class="menu-item-has-children">
   <a href="#" class="drop-down">Algorithm</a>
   <i class="bi bi-plus dropdown-icon"></i>
   <ul class="sub-menu">
@@ -347,7 +268,7 @@
         </a>
       </li>
       </ul>
-</li>
+</li> -->
 
 
        
@@ -421,81 +342,6 @@
     </header>
 
       <script src="../code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
-
-$(document).ready(function () {
-  $('#getintouchform').on('submit', function (e) {
-    e.preventDefault();
-    $('.error').remove();
-
-    let isValid = true;
-
-    const fullName = $('#fullname').val().trim();
-    const email = $('#email').val().trim();
-    const phone = $('#phone').val().trim();
-    const message = $('#mesage').val().trim();
-
-    if (!fullName) {
-
-      $('#fullname').after('<span class="error mb-3" style="color: red; display: block;">Full Name is required</span>');
-      isValid = false;
-    }
-
-    if (!email) {
- 
-      $('#email').after('<span class="error mb-3" style="color: red; display: block;">Email is required</span>');
-      isValid = false;
-    }
-if (!phone) {
-  
-  $('#phone').after('<span class="error mb-3" style="color: red; display: block;">Phone is required</span>');
-  isValid = false;
-} else if (!/^\d{10}$/.test(phone)) {
-  
-  $('#phone').after('<span class="error mb-3" style="color: red; display: block;">Enter a valid 10-digit phone number</span>');
-  isValid = false;
-}
-
-
-    if (!message) {
-    
-      $('#mesage').after('<span class="error mb-3" style="color: red; display: block;">Message is required</span>');
-      isValid = false;
-    }
-
-    if (!isValid) return;
-
-    const formData = new FormData();
-    formData.append('fullname', fullName);
-    formData.append('email', email);
-    formData.append('phone', phone);
-    formData.append('mesage', message);
-    formData.append('_token', 'pQvhpi6XYxDMa2evRaif1ubRpkrohnsMCIhYWbj0'); // Laravel CSRF
-
-    $.ajax({
-      url: "https://paramnivesh.com/requestformaction", // Update to correct route
-      method: "POST",
-      data: formData,
-      processData: false,
-      contentType: false,
-      success: function (response) {
-        $('#responseMessage').html('<div class="alert alert-success">' + response.message + '</div>');
-        $('#getintouchform')[0].reset();
-        // Optional: redirect
-   location.reload();
-      },
-      error: function (xhr) {
-        let error = 'Something went wrong.';
-        if (xhr.status === 422 && xhr.responseJSON && xhr.responseJSON.message) {
-          error = xhr.responseJSON.message;
-        }
-        $('#responseMessage').html('<div class="alert alert-danger">' + error + '</div>');
-      }
-    });
-  });
-});
-
-</script>
 
 
     <!-- banner-section-two start --><!-- breadcrumb-section start -->
@@ -532,212 +378,132 @@ if (!phone) {
                 data-wow-delay="400ms" data-wow-duration="1500ms ">
                 <div class="section-title style-2">
                     <span class="sub-title">Pricing Plan</span>
-                    <h2>Choose Our Best Pricing</h2>
+                    <h2 class="gradient-text">Choose Our Best Pricing</h2>
+                    <p class="text-lg text-gray-600 max-w-2xl mx-auto">Explore our range of trading and investment packages designed to meet your financial goals.</p>
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-lg-12 align-items-center justify-content-center">
-                <div class="nav-button-wrapper">
-                    <ul class="nav nav-pills" id="pills-tab" role="tablist">
 
-                                                    
-        <li class="nav-item" role="presentation">
-            <button class="nav-link active" 
-                id="pills-15-tab" 
-                data-bs-toggle="pill" 
-                data-bs-target="#pills-15"
-                type="button" role="tab" 
-                aria-controls="pills-15" 
-                aria-selected="true">
-                Cash
-            </button>
-        </li>
-                              
-        <li class="nav-item" role="presentation">
-            <button class="nav-link " 
-                id="pills-16-tab" 
-                data-bs-toggle="pill" 
-                data-bs-target="#pills-16"
-                type="button" role="tab" 
-                aria-controls="pills-16" 
-                aria-selected="false">
-                Future
-            </button>
-        </li>
-                              
-        <li class="nav-item" role="presentation">
-            <button class="nav-link " 
-                id="pills-17-tab" 
-                data-bs-toggle="pill" 
-                data-bs-target="#pills-17"
-                type="button" role="tab" 
-                aria-controls="pills-17" 
-                aria-selected="false">
-                Option
-            </button>
-        </li>
-    
-                      
-                    </ul>
-                    <div class="tab-content pt-50" id="pills-tabContent">
+        <div class="mx-auto max-w-7xl">
 
-    
-    <div class="tab-pane fade show active"
-         id="pills-15"
-         role="tabpanel"
-         aria-labelledby="pills-15-tab">
+            <!-- Centralized subscription period selection buttons -->
+            <div class="flex justify-center">
+              <div class="flex flex-wrap justify-center w-max space-x-2 sm:space-x-4 mb-10 animated-buttons">
+                <button class="period-btn active" data-period="monthly">Monthly</button>
+                <button class="period-btn" data-period="quarterly">Quarterly</button>
+                <button class="period-btn" data-period="half-yearly">Half Yearly</button>
+                <button class="period-btn" data-period="yearly">Yearly</button>
+              </div>
+            </div>
 
-        <div class="packageContainer">
-            <div class="package">
-                <div class="packageLeftBar">
-                    <ul>
-                        <li>Cash Package Details</li>
-                                                                                                                                                                <li>Monthly</li>
-                                                                                                                <li>Quarterly</li>
-                                                                                                                <li>Half Yearly</li>
-                                                                                                                <li>Yearly</li>
-                                                                            <li></li>
-                    </ul>
-                </div>
+            <!-- Container for the investment plan cards -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-                                                    
-                                            
-                        <div class="packageDetails yellow">
-                            <ul>
-                                <li><span>Cash </span></li>
-                                <li>Mark Stock Cash</li>
-
-                                                                                                                                                                                <li>
-                                                                                            ₹ 12000
-                                                                                                                                    </li>
-                                                                                                                                                <li>
-                                                                                            ₹ 30000
-                                                                                                                                    </li>
-                                                                                                                                                <li>
-                                                                                            ₹ 50000
-                                                                                                                                    </li>
-                                                                                                                                                <li>
-                                                                                            ₹ 80000
-                                                                                                                                    </li>
-                                                                    
-                                <li>
-                                    <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdropbuy" class="signUp">Buy Now</a>
-
-                                    <!--<a href="https://paramnivesh.com/Payment" class="signUp">Buy Now</a>-->
-                                </li>
-                            </ul>
+                <!-- Card for Long and Mid Term Investing -->
+                <div class="bg-white rounded-xl shadow-lg transition-all duration-300 p-6 flex flex-col justify-between card-hover animated-card"
+                    data-plan="long-term" data-price-monthly="5000" data-price-quarterly="12750" data-price-half-yearly="21500" data-price-yearly="34000"
+                >
+                    <div class="flex flex-col">
+                        <h2 class="text-2xl font-bold mb-2 text-purple-600">Long & Mid-Term Investing</h2>
+                        <p class="text-sm font-semibold text-purple-600 mb-4">HOLDING 1 YEAR</p>
+                        <p class="text-gray-600 mb-4">4-5 detailed research reports per month with up to 50% potential and 95% accuracy.</p>
+                        <div class="flex justify-between mb-4">
+                            <p class="text-gray-600 font-semibold">Price:</p>
+                            <span class="font-semibold text-2xl text-gray-900 price-display" id="price-long-term">₹5,000</span>
                         </div>
-                                    
-            </div>
-        </div>
-    </div>
-    
-    <div class="tab-pane fade "
-         id="pills-16"
-         role="tabpanel"
-         aria-labelledby="pills-16-tab">
-
-        <div class="packageContainer">
-            <div class="package">
-                <div class="packageLeftBar">
-                    <ul>
-                        <li>Future Package Details</li>
-                                                                                                                                                                <li>Monthly</li>
-                                                                                                                <li>Quarterly</li>
-                                                                                                                <li>Half Yearly</li>
-                                                                                                                <li>Yearly</li>
-                                                                            <li></li>
-                    </ul>
-                </div>
-
-                                                    
-                                            
-                        <div class="packageDetails yellow">
-                            <ul>
-                                <li><span>Future </span></li>
-                                <li>Mark Stock Future</li>
-
-                                                                                                                                                                                <li>
-                                                                                            ₹ 12000
-                                                                                                                                    </li>
-                                                                                                                                                <li>
-                                                                                            ₹ 30000
-                                                                                                                                    </li>
-                                                                                                                                                <li>
-                                                                                            ₹ 50000
-                                                                                                                                    </li>
-                                                                                                                                                <li>
-                                                                                            ₹ 80000
-                                                                                                                                    </li>
-                                                                    
-                                <li>
-                                    <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdropbuy" class="signUp">Buy Now</a>
-
-                                    <!--<a href="https://paramnivesh.com/Payment" class="signUp">Buy Now</a>-->
-                                </li>
-                            </ul>
-                        </div>
-                                    
-            </div>
-        </div>
-    </div>
-    
-    <div class="tab-pane fade "
-         id="pills-17"
-         role="tabpanel"
-         aria-labelledby="pills-17-tab">
-
-        <div class="packageContainer">
-            <div class="package">
-                <div class="packageLeftBar">
-                    <ul>
-                        <li>Option Package Details</li>
-                                                                                                                                                                <li>Monthly</li>
-                                                                                                                <li>Quarterly</li>
-                                                                                                                <li>Half Yearly</li>
-                                                                                                                <li>Yearly</li>
-                                                                            <li></li>
-                    </ul>
-                </div>
-
-                                                    
-                                            
-                        <div class="packageDetails yellow">
-                            <ul>
-                                <li><span>Option </span></li>
-                                <li>Mark Stock Option</li>
-
-                                                                                                                                                                                <li>
-                                                                                            ₹ 12000
-                                                                                                                                    </li>
-                                                                                                                                                <li>
-                                                                                            ₹ 30000
-                                                                                                                                    </li>
-                                                                                                                                                <li>
-                                                                                            ₹ 50000
-                                                                                                                                    </li>
-                                                                                                                                                <li>
-                                                                                            ₹ 80000
-                                                                                                                                    </li>
-                                                                    
-                                <li>
-                                    <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdropbuy" class="signUp">Buy Now</a>
-
-                                    <!--<a href="https://paramnivesh.com/Payment" class="signUp">Buy Now</a>-->
-                                </li>
-                            </ul>
-                        </div>
-                                    
-            </div>
-        </div>
-    </div>
-
-
                     </div>
+                    <!-- Subscribe Button -->
+                    <button class="w-full bg-purple-600 text-white font-bold py-3 px-6 rounded-xl hover:bg-purple-700 transition-colors duration-200 shadow-md subscribe-btn">Subscribe</button>
                 </div>
+
+                <!-- Card for Swing Trade (CASH) -->
+                <div class="bg-white rounded-xl shadow-lg transition-all duration-300 p-6 flex flex-col justify-between card-hover animated-card"
+                    style="animation-delay: 0.1s;"
+                    data-plan="swing-trade" data-price-monthly="10500" data-price-quarterly="26750" data-price-half-yearly="45500" data-price-yearly="72000"
+                >
+                    <div class="flex flex-col">
+                        <h2 class="text-2xl font-bold mb-2 text-orange-600">Swing Trade (CASH)</h2>
+                        <p class="text-sm font-semibold text-orange-600 mb-4">HOLDING 1 MONTH</p>
+                        <p class="text-gray-600 mb-4">Daily minimum 2 recommendations with 90% accuracy. Number of recommendations depend on market.</p>
+                        <div class="flex justify-between mb-4">
+                            <p class="text-gray-600 font-semibold">Price:</p>
+                            <span class="font-semibold text-2xl text-gray-900 price-display" id="price-swing-trade">₹10,500</span>
+                        </div>
+                    </div>
+                    <button class="w-full bg-orange-600 text-white font-bold py-3 px-6 rounded-xl hover:bg-orange-700 transition-colors duration-200 shadow-md subscribe-btn">Subscribe</button>
+                </div>
+
+                <!-- Card for Intraday Index Option -->
+                <div class="bg-white rounded-xl shadow-lg transition-all duration-300 p-6 flex flex-col justify-between card-hover animated-card"
+                    style="animation-delay: 0.2s;"
+                    data-plan="intraday-index" data-price-monthly="15500" data-price-quarterly="39500" data-price-half-yearly="67000" data-price-yearly="97000"
+                >
+                    <div class="flex flex-col">
+                        <h2 class="text-2xl font-bold mb-2 text-blue-600">Intraday Index Option</h2>
+                        <p class="text-sm font-semibold text-blue-600 mb-4">INTRADAY</p>
+                        <p class="text-gray-600 mb-4">Daily 2-3 recommendations with around 85% accuracy. Number of recommendations depend on market.</p>
+                        <div class="flex justify-between mb-4">
+                            <p class="text-gray-600 font-semibold">Price:</p>
+                            <span class="font-semibold text-2xl text-gray-900 price-display" id="price-intraday-index">₹15,500</span>
+                        </div>
+                    </div>
+                    <button class="w-full bg-blue-600 text-white font-bold py-3 px-6 rounded-xl hover:bg-blue-700 transition-colors duration-200 shadow-md subscribe-btn">Subscribe</button>
+                </div>
+
+                <!-- Card for Intraday Stock Option -->
+                <div class="bg-white rounded-xl shadow-lg transition-all duration-300 p-6 flex flex-col justify-between card-hover animated-card"
+                    style="animation-delay: 0.3s;"
+                    data-plan="intraday-stock" data-price-monthly="18000" data-price-quarterly="45500" data-price-half-yearly="77760" data-price-yearly="123000"
+                >
+                    <div class="flex flex-col">
+                        <h2 class="text-2xl font-bold mb-2 text-red-600">Intraday Stock Option</h2>
+                        <p class="text-sm font-semibold text-red-600 mb-4">INTRADAY + BTST</p>
+                        <p class="text-gray-600 mb-4">Daily minimum 2 recommendations with around 85% accuracy. Number of recommendations depend on market.</p>
+                        <div class="flex justify-between mb-4">
+                            <p class="text-gray-600 font-semibold">Price:</p>
+                            <span class="font-semibold text-2xl text-gray-900 price-display" id="price-intraday-stock">₹18,000</span>
+                        </div>
+                    </div>
+                    <button class="w-full bg-red-600 text-white font-bold py-3 px-6 rounded-xl hover:bg-red-700 transition-colors duration-200 shadow-md subscribe-btn">Subscribe</button>
+                </div>
+
+                <!-- Card for Option Short Selling -->
+                <div class="bg-white rounded-xl shadow-lg transition-all duration-300 p-6 flex flex-col justify-between card-hover animated-card"
+                    style="animation-delay: 0.4s;"
+                    data-plan="option-short-selling" data-price-monthly="15500" data-price-quarterly="39500" data-price-half-yearly="67000" data-price-yearly="97000"
+                >
+                    <div class="flex flex-col">
+                        <h2 class="text-2xl font-bold mb-2 text-green-600">Option Short Selling</h2>
+                        <p class="text-sm font-semibold text-green-600 mb-4">INTRADAY + BTST</p>
+                        <p class="text-gray-600 mb-4">Daily 2 recommendations with around 85% accuracy. Number of recommendations depend on market.</p>
+                        <div class="flex justify-between mb-4">
+                            <p class="text-gray-600 font-semibold">Price:</p>
+                            <span class="font-semibold text-2xl text-gray-900 price-display" id="price-option-short-selling">₹15,500</span>
+                        </div>
+                    </div>
+                    <button class="w-full bg-green-600 text-white font-bold py-3 px-6 rounded-xl hover:bg-green-700 transition-colors duration-200 shadow-md subscribe-btn">Subscribe</button>
+                </div>
+
+                <!-- Card for Hedged Short Selling -->
+                <div class="bg-white rounded-xl shadow-lg transition-all duration-300 p-6 flex flex-col justify-between card-hover animated-card"
+                    style="animation-delay: 0.5s;"
+                    data-plan="hedged-short-selling" data-price-monthly="15500" data-price-quarterly="39500" data-price-half-yearly="67000" data-price-yearly="97000"
+                >
+                    <div>
+                        <h2 class="text-2xl font-bold mb-2 text-teal-600">Hedged Short Selling</h2>
+                        <p class="text-sm font-semibold text-teal-600 mb-4">INTRADAY + BTST</p>
+                        <p class="text-gray-600 mb-4">Daily 2 recommendations with around 85% accuracy. Number of recommendations depend on market.</p>
+                        <div class="text-right mb-4">
+                            <p class="text-gray-600">Price:</p>
+                            <span class="font-semibold text-2xl text-gray-900 price-display" id="price-hedged-short-selling">₹15,500</span>
+                        </div>
+                    </div>
+                    <button class="w-full bg-teal-600 text-white font-bold py-3 px-6 rounded-xl hover:bg-teal-700 transition-colors duration-200 shadow-md subscribe-btn">Subscribe</button>
+                </div>
+
             </div>
         </div>
+
     </div>
 </div>
 </div>
@@ -767,34 +533,54 @@ if (!phone) {
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
                             +91 9993830999
                         </a>
+                        <a class="inline-flex items-center gap-x-2 text-gray-300 hover:text-gray-400 transition-all duration-300" href="tel:+91 9993830999">
+                            <span>Reg. No. -</span>
+                            <span>INH000016144</span>
+                        </a>
                     </div>
                 </div>
 
-                <div class="col-span-1">
-                    <h4 class="font-semibold text-gray-100 uppercase">Company</h4>
+                <div class="col-span-1 grid grid-cols-2">
+                    <div>
+                        <h4 class="font-semibold text-gray-100 uppercase">Company</h4>
     
-                    <div class="mt-6 grid space-y-3">
-                        <p><a class="inline-flex gap-x-2 text-base text-gray-300 hover:text-gray-400 transition-all duration-300" href="/aboutus.html">About</a></p>
-                        <p><a class="inline-flex gap-x-2 text-base text-gray-300 hover:text-gray-400 transition-all duration-300" href="/#features">Services</a></p>
-                        <p><a class="inline-flex gap-x-2 text-base text-gray-300 hover:text-gray-400 transition-all duration-300" href="/algo-category/8.html">Portfolio</a></p>
-                        <!-- <p><a class="inline-flex gap-x-2 text-base text-gray-300 hover:text-gray-400 transition-all duration-300" href="#">Blog</a></p> -->
-                        <p><a class="inline-flex gap-x-2 text-base text-gray-300 hover:text-gray-400 transition-all duration-300" href="/contactus.html">Contact</a></p>
+                        <div class="mt-6 grid space-y-3">
+                            <p><a class="inline-flex gap-x-2 text-base text-gray-300 hover:text-gray-400 transition-all duration-300" href="/">Home</a></p>
+                            <p><a class="inline-flex gap-x-2 text-base text-gray-300 hover:text-gray-400 transition-all duration-300" href="/aboutus.html">About us</a></p>
+                            <p><a class="inline-flex gap-x-2 text-base text-gray-300 hover:text-gray-400 transition-all duration-300" href="/contactus.html">Contact us</a></p>
+                            <p><a class="inline-flex gap-x-2 text-base text-gray-300 hover:text-gray-400 transition-all duration-300" href="/faq.html">FAQ</a></p>
+                            <p><a class="inline-flex gap-x-2 text-base text-gray-300 hover:text-gray-400 transition-all duration-300" href="/">KYC</a></p>
+
+
+                            <!-- <p><a class="inline-flex gap-x-2 text-base text-gray-300 hover:text-gray-400 transition-all duration-300" href="/#features">Services</a></p>
+                            <p><a class="inline-flex gap-x-2 text-base text-gray-300 hover:text-gray-400 transition-all duration-300" href="/algo-category/8.html">Portfolio</a></p>
+                            <p><a class="inline-flex gap-x-2 text-base text-gray-300 hover:text-gray-400 transition-all duration-300" href="/contactus.html">Contact</a></p> -->
+                        </div>
                     </div>
+
+                    
                 </div>
+
     
                 <div class="col-span-1">
-                    <h4 class="font-semibold text-gray-100 uppercase">Product</h4>
+                    <h4 class="font-semibold text-gray-100 uppercase">Our Services</h4>
         
                     <div class="mt-6 grid space-y-3">
-                        <p><a class="inline-flex gap-x-2 text-base text-gray-300 hover:text-gray-400 transition-all duration-300" href="/#features">Services</a></p>
+                        <!-- <p><a class="inline-flex gap-x-2 text-base text-gray-300 hover:text-gray-400 transition-all duration-300" href="/#features">Services</a></p>
                         <p><a class="inline-flex gap-x-2 text-base text-gray-300 hover:text-gray-400 transition-all duration-300" href="/aboutus.html">About Us</a></p>
                         <p><a class="inline-flex gap-x-2 text-base text-gray-300 hover:text-gray-400 transition-all duration-300" href="/risk.html">Risk</a></p>
-                        <p><a class="inline-flex gap-x-2 text-base text-gray-300 hover:text-gray-400 transition-all duration-300" href="/faq.html">FAQ</a></p>
+                        <p><a class="inline-flex gap-x-2 text-base text-gray-300 hover:text-gray-400 transition-all duration-300" href="/faq.html">FAQ</a></p> -->
+                        <p><a class="inline-flex gap-x-2 text-base text-gray-300 hover:text-gray-400 transition-all duration-300" href="/service-category/15.html">Cash</a></p>
+                        <p><a class="inline-flex gap-x-2 text-base text-gray-300 hover:text-gray-400 transition-all duration-300" href="/aboutus.html">Saving</a></p>
+                        <p><a class="inline-flex gap-x-2 text-base text-gray-300 hover:text-gray-400 transition-all duration-300" href="/service-category/17.html">Inter Option</a></p>
+                        <p><a class="inline-flex gap-x-2 text-base text-gray-300 hover:text-gray-400 transition-all duration-300" href="/service-sub-category/26.html">Stock Option</a></p>
+                        <p><a class="inline-flex gap-x-2 text-base text-gray-300 hover:text-gray-400 transition-all duration-300" href="/#">Short Selling</a></p>
+                        <p><a class="inline-flex gap-x-2 text-base text-gray-300 hover:text-gray-400 transition-all duration-300" href="/#">Hedge Selling</a></p>
                     </div>
                 </div>
 
                 <div class="col-span-1">
-                    <h4 class="font-semibold text-gray-100 uppercase">Important Links</h4>
+                    <h4 class="font-semibold text-gray-100 uppercase">Comliance</h4>
     
                     <div class="mt-6 grid space-y-3">
                         <p><a class="inline-flex gap-x-2 text-base text-gray-300 hover:text-gray-400 transition-all duration-300" href="/investor-charter.html">Investor Charter</a></p>
@@ -1022,3 +808,70 @@ if (!phonepay) {
 });
 
 </script>
+
+
+
+<script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Function to format numbers as currency
+            function formatPrice(number) {
+                return `₹${Number(number).toLocaleString('en-IN')}`;
+            }
+
+            // Get all the cards and period buttons
+            const cards = document.querySelectorAll('[data-plan]');
+            const periodButtons = document.querySelectorAll('.period-btn');
+
+            // Set the default active button on page load
+            const defaultActiveButton = document.querySelector('.period-btn[data-period="monthly"]');
+            if (defaultActiveButton) {
+                defaultActiveButton.classList.add('active');
+            }
+            
+            // Handle clicks on the top-level period buttons
+            periodButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    periodButtons.forEach(btn => {
+                        btn.classList.remove('active');
+                    });
+                    
+                    button.classList.add('active');
+                    
+                    // Get the selected period from the data attribute
+                    const selectedPeriod = button.dataset.period;
+                    
+                    // Iterate through all the cards and update their prices
+                    cards.forEach(card => {
+                        // Use the selected period to find the corresponding price attribute
+                        const priceAttribute = `data-price-${selectedPeriod}`;
+                        const newPrice = card.getAttribute(priceAttribute);
+                        
+                        // Find the price display element and update its content
+                        const priceDisplay = card.querySelector('.price-display');
+                        if (priceDisplay && newPrice) {
+                            priceDisplay.textContent = formatPrice(newPrice);
+                        }
+                    });
+                });
+            });
+
+            cards.forEach(card => {
+                const subscribeBtn = card.querySelector('.subscribe-btn');
+                const planTitle = card.querySelector('h2').textContent;
+                
+                subscribeBtn.addEventListener('click', () => {
+                    const activePeriodButton = document.querySelector('.period-btn.active');
+                    const selectedPeriod = activePeriodButton.dataset.period;
+                    const priceDisplay = card.querySelector('.price-display').textContent;
+                    
+                    console.log(`Subscribing to: ${planTitle}`);
+                    console.log(`Plan: ${selectedPeriod}`);
+                    console.log(`Price: ${priceDisplay}`);
+                    window.location.href = '/Payment.html'
+                    // alert(`Subscribing to ${planTitle} (${selectedPeriod}) for ${priceDisplay}. Check the console for details.`);
+                });
+            });
+        
+        });
+    
+    </script>

@@ -69,6 +69,7 @@
   document.addEventListener('DOMContentLoaded', function (event) {
     let offset = 50
     let circleContainer = document.querySelector('.circle-container')
+    let socialContainer = document.querySelector('.social-navigation')
     let circlePath = document.querySelector('.circle-container path')
     let pathLength = circlePath.getTotalLength()
     circlePath.style.transition = circlePath.style.WebkitTransition = 'none'
@@ -87,8 +88,10 @@
       circlePath.style.strokeDashoffset = progress
 
       if (scrollTop > offset) {
+        socialContainer ? socialContainer.classList.add('active') : ''
         circleContainer.classList.add('active')
       } else {
+        socialContainer ? socialContainer.classList.remove('active') : ''
         circleContainer.classList.remove('active')
       }
     }
@@ -101,6 +104,7 @@
     }
     updateLoader()
   })
+
 
   // ====================
   // Progress Bar

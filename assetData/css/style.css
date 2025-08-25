@@ -904,6 +904,10 @@ select{
   width: 1rem !important;
   height: 1rem !important;
 }
+.size-5 {
+  width: 1.25rem !important;
+  height: 1.25rem !important;
+}
 .size-8{
   width: 2rem !important;
   height: 2rem !important;
@@ -911,6 +915,10 @@ select{
 .size-9{
   width: 2.25rem !important;
   height: 2.25rem !important;
+}
+.size-10{
+  width: 2.5rem !important;
+  height: 2.5rem !important;
 }
 .size-full{
   width: 100% !important;

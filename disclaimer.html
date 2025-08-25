@@ -27,6 +27,87 @@
     <link href="../cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
     <title>Param Nivesh</title>
     <link rel="icon" href="public/webassets/image/new/fav-new.png">
+
+
+    <style>
+        body {
+            color: #333;
+            background-color: #f4f4f9;
+        }
+
+        .disclaimer-container {
+            max-width: 800px;
+            margin: 50px auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .disclaimer-header {
+            text-align: center;
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .disclaimer-section-title {
+            color: var(--primary-color);
+            margin-top: 25px;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 5px;
+        }
+
+        .disclaimer-paragraph {
+            margin-bottom: 15px;
+        }
+
+        .disclaimer-list {
+            list-style-type: disc;
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+        
+        .disclaimer-list-item {
+            margin-bottom: 10px;
+        }
+        
+        .disclaimer-highlight {
+            font-weight: bold;
+        }
+
+        .do-dont-section {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .do-box, .dont-box {
+            flex: 1;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .do-box {
+            background-color: #d4edda;
+            border: 1px solid #28a745;
+        }
+
+        .dont-box {
+            background-color: #f8d7da;
+            border: 1px solid #dc3545;
+        }
+
+        .do-box-title, .dont-box-title {
+            color: #333;
+            font-size: 1.2em;
+            margin-top: 0;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+    </style>
   </head>
   <body>
     <!-- scroll top -->
@@ -39,8 +120,7 @@
       <div class="sidebar-logo-area d-flex justify-content-between align-items-center">
         <div class="sidebar-logo-wrap">
             <a href="#">
-              <div style="color: blue;" class="text-white bg-primary p-2 px-4 rounded-lg text-base">PARAM NIVESH</div>
-                <!-- <img alt="image" src="public/webassets/image/new/paramLogo.png" /> -->
+                <img alt="image" src="public/webassets/image/new/paramLogo.png" />
             </a>
         </div>
         <div class="right-sidebar-close-btn">
@@ -100,16 +180,14 @@
       <div class="container-fluid container-rextfy d-flex flex-nowrap align-items-center justify-content-between">
         <div class="header-logo">
           <a href="index.html">
-            <div style="color: blue;" class="text-white bg-primary p-2 px-4 rounded-lg text-base">PARAM NIVESH</div>
-            <!-- <img alt="image" class="img-fluid" src="public/webassets/image/new/paramLogo.png" /> -->
+            <img alt="image" class="img-fluid" src="public/webassets/image/new/paramLogo.png" />
           </a>
         </div>
         <div class="main-menu">
           <div class="mobile-logo-area d-lg-none d-flex justify-content-center">
             <div class="mobile-logo-wrap">
               <a href="index.html">
-                <div style="color: blue;" class="text-white bg-primary p-2 px-4 rounded-lg text-base">PARAM NIVESH</div>
-                <!-- <img alt="image" class="img-fluid" src="public/webassets/image/new/paramLogo.png" /> -->
+                <img alt="image" class="img-fluid" src="public/webassets/image/new/paramLogo.png" />
               </a>
             </div>
           </div>
@@ -134,18 +212,38 @@
 </li>
 
            
-                             <li class="">
+<li class="">
     <a href="complaint-data.html" class="drop-down">Complaint data</a>
 </li>
 
+<li class="">
+    <a href="grievance-redressal-framework.html" class="drop-down">Grievance Redressal Policy</a>
+</li>
+
+<li class="">
+    <a href="privacy-policy.html" class="drop-down">Privacy Policy</a>
+</li>
+
+<li class="">
+    <a href="refund-policy.html" class="drop-down">Refund Policy</a>
+</li>
+<li class="">
+    <a href="term.html" class="drop-down">Terms & Conditions</a>
+</li>
+<li class="">
+    <a href="standard-warnings.html" class="drop-down">Standard Warnings</a>
+</li>
+<li class="">
+    <a href="other-information.html" class="drop-down">Other Information</a>
+</li>
+
                          <li class="">
-    <a href="grievance-redressal-framework.html" class="drop-down">Grievance Redressal Framework</a>
+    <a href="disclaimer.html" class="drop-down">Disclaimer</a>
 </li>
 
-                         <li class="active">
-    <a href="disclaimer.html" class="drop-down">Disclaimer and Disclosure</a>
+<li class="">
+    <a href="disclosure.html" class="drop-down">Disclosure</a>
 </li>
-
 
             
             
@@ -174,12 +272,12 @@
 
             
                                   <li class="">
-    <a href="subscribe.html" class="drop-down">Subscribe</a>
+    <a href="subscribe.html" class="drop-down">Pricing</a>
 </li>
 
 
 
-<li class="menu-item-has-children">
+<!-- <li class="menu-item-has-children">
   <a href="#" class="drop-down">Algorithm</a>
   <i class="bi bi-plus dropdown-icon"></i>
   <ul class="sub-menu">
@@ -189,7 +287,7 @@
         </a>
       </li>
       </ul>
-</li>
+</li> -->
 
 
        
@@ -342,7 +440,7 @@ if (!phone) {
 
     <!-- banner-section-two start -->
     <!-- breadcrumb-section start -->
-    <div class="breadcrumb-section" style="background-image: url('public/webassets/image/banner-img/breadcrumb-img.png')">
+    <div class="breadcrumb-section" style="background-image: url('public/webassets/image/banner-img/breadcrumb-img.png');">
             <div class="container">
               <div class="row">
                 <div class="col-lg-12">
@@ -371,54 +469,54 @@ if (!phone) {
     <!-- breadcrumb-section end -->
 
     <!-- home1- service section start -->
-        <div class="blog-details-page pt-120 pb-80">
-    <div class="container">
-      <div class="row g-lg-5 gy-5">
-        <div class="col-lg-12 mt-0">
-          <div class="blog-details-content">
-         
+    <div class="disclaimer-container">
+        <h1 class="disclaimer-header">Disclaimer</h1>
 
+        <p class="disclaimer-paragraph"><span class="disclaimer-highlight">paramnivesh.com</span> is an owned by Mr. Inderjeet Singh, who is registered with SEBI as a research analyst under the SEBI Act, 1992 and the corresponding regulations under Research Analyst Regulations, 2014. Our SEBI Registration number is <span class="disclaimer-highlight">INH000016144</span>.</p>
 
+        <p class="disclaimer-paragraph">By accessing paramnivesh.com, I have read, understood and agree to be legally bound by the terms of the following disclaimer and user agreement.</p>
 
-            
+        <h2 class="disclaimer-section-title">DISCLAIMER</h2>
+        <ul class="disclaimer-list">
+            <li class="disclaimer-list-item">We believe in sharing our study and views about various company stocks and Indices based on Research and I/we don’t have any direct interests or partnerships with those companies.</li>
+            <li class="disclaimer-list-item">We do not have financial interests in the recommended stocks, and do not hold them in our own portfolio.</li>
+            <li class="disclaimer-list-item">We do not receive any compensation from the companies whose stocks are discussed or suggested.</li>
+            <li class="disclaimer-list-item">We are not serving as an employee, or executive of the company whose stock gets recommended or discussed.</li>
+            <li class="disclaimer-list-item">Use of the information herein is at one's own risk. This is not an offer to sell or solicitation to buy any securities and Mr. Inderjeet Singh (SEBI Registered Analyst) will not be liable for any losses incurred or investment(s) made or decisions taken/or not taken based on the information provided herein. Information contained herein does not constitute a personal recommendation or take into account the particular investment objectives, financial situations, or needs of individual investors. Before acting on any recommendation, investors should consider whether it is suitable for their particular circumstances and, if necessary, seek an independent professional advice. Inderjeet Singh (SEBI Registered Analyst) shall not be responsible for any kind of loss / liability arising from the utilization of the advice / views made in its products.</li>
+            <li class="disclaimer-list-item">Information herein is believed to be reliable but Mr. Inderjeet Singh (SEBI Registered Analyst) does not warrant its completeness or accuracy and expressly disclaims all warranties and conditions of any kind, whether express or implied.</li>
+            <li class="disclaimer-list-item">The performance data quoted represents past performance and does not guarantee future results.</li>
+            <li class="disclaimer-list-item">Please do think Multiple times before joining our Paid Services. Payments referred to herein shall not be refundable under any circumstances.</li>
+            <li class="disclaimer-list-item">No section or part/contents of this site can be reproduced / copied in any form or by any modes on any kind of tape, disc, photocopy, perforated media, storage device, and so on, without the prior consent of Mr. Inderjeet Singh (SEBI Registered Analyst). Any breach in this condition, can lead to legal actions / consequences. All disputes and litigations will be carried out in Indore jurisdiction only.</li>
+        </ul>
 
-<p><p><strong>Standard Warning</strong></p>
+        <h2 class="disclaimer-section-title">CLIENT PERSONAL DATA PROTECTION POLICY</h2>
+        <ul class="disclaimer-list">
+            <li class="disclaimer-list-item">We retain records relating to the services that we provide so that we are better able to assist our clients with their needs and to comply with professional guidelines or requirements of law.</li>
+            <li class="disclaimer-list-item">We maintain physical, electronic, and procedural safeguards that comply with federal and state laws to guard our clients’ non-public personal information.</li>
+            <li class="disclaimer-list-item">We protect the confidentiality of clients’ Mobile Number, Name, and Address & Email Id to prohibit unlawful disclosure of our data, and limit access to our clients’ data in the same manner as we do all other non-public personal information.</li>
+            <li class="disclaimer-list-item">Documents and information containing any non‐ public personal information are safeguarded and not disclosed to anyone, unless authorized by the client or required by law.</li>
+        </ul>
 
-<p>&nbsp;</p>
-
-<p>&nbsp;&ldquo;Investment in securities market are subject to market risks. Read all the related documents carefully before investing.&rdquo;</p>
-
-<p>&nbsp;</p>
-
-<p><strong>Disclaimer</strong></p>
-
-<p>&nbsp;</p>
-
-<p>&nbsp;&ldquo;Registration granted by SEBI, Enlistment as RA with exchange and certification from NISM in no way guarantee performance of the Research Analyst or provide any assurance of returns to investors.</p>
-
-<p>&ldquo;The securities quoted, if any are for illustration only and are not recommendatory.&quot;</p>
-
-<p>&nbsp;</p>
-
-<p>By accessing <a href="index.html">www.paramnivesh.com</a> , you have read, understood &amp; agree to be legally bound by the terms of the following disclaimer- Stock trading is inherently risky and you agree to assume complete and full responsibility for the outcomes of all trading decisions that you make, including but not limited to loss of capital. Under no circumstances should any person at this site make trading decisions based solely on the information discussed herein. Information and recommendations on the website are for general information only. Nothing contained herein is an advice to sell nor solicitation to buy any securities.</p>
-
-<p>&nbsp;</p>
-
-<p>All information, recommendations, advice and contents shared on the website is meant to be used for personal purpose only and must not be reproduced or copied in any form.</p>
-
-<p>&nbsp;</p>
-
-<p>&nbsp;</p>
-
-<p>By continuing to use this website, you agree to all our terms and policies.</p></p>
-
-          
-          </div>
+        <h2 class="disclaimer-section-title">DO'S and DONT'S</h2>
+        <div class="do-dont-section">
+            <div class="do-box">
+                <h3 class="do-box-title">DO</h3>
+                <ul class="disclaimer-list">
+                    <li class="disclaimer-list-item">Do research or get Any Analyst help before entering the Trade</li>
+                    <li class="disclaimer-list-item">Use only the surplus money for trading</li>
+                </ul>
+            </div>
+            <div class="dont-box">
+                <h3 class="dont-box-title">DONT'S</h3>
+                <ul class="disclaimer-list">
+                    <li class="disclaimer-list-item">Never share your trading password to anyone</li>
+                    <li class="disclaimer-list-item">Don’t allow anyone to trade on behalf of you</li>
+                </ul>
+            </div>
         </div>
-      </div>
+
+        <p class="disclaimer-paragraph" style="margin-top: 20px;">By accessing paramnivesh.com I have read, understood and agree to be legally bound by the terms of the following disclaimer and user agreement.</p>
     </div>
-  </div>
-  
   
   <!-- Footer Start -->
     <footer class="bg-black">
@@ -445,34 +543,54 @@ if (!phone) {
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
                             +91 9993830999
                         </a>
+                        <a class="inline-flex items-center gap-x-2 text-gray-300 hover:text-gray-400 transition-all duration-300" href="tel:+91 9993830999">
+                            <span>Reg. No. -</span>
+                            <span>INH000016144</span>
+                        </a>
                     </div>
                 </div>
 
-                <div class="col-span-1">
-                    <h4 class="font-semibold text-gray-100 uppercase">Company</h4>
+                <div class="col-span-1 grid grid-cols-2">
+                    <div>
+                        <h4 class="font-semibold text-gray-100 uppercase">Company</h4>
     
-                    <div class="mt-6 grid space-y-3">
-                        <p><a class="inline-flex gap-x-2 text-base text-gray-300 hover:text-gray-400 transition-all duration-300" href="/aboutus.html">About</a></p>
-                        <p><a class="inline-flex gap-x-2 text-base text-gray-300 hover:text-gray-400 transition-all duration-300" href="/#features">Services</a></p>
-                        <p><a class="inline-flex gap-x-2 text-base text-gray-300 hover:text-gray-400 transition-all duration-300" href="/algo-category/8.html">Portfolio</a></p>
-                        <!-- <p><a class="inline-flex gap-x-2 text-base text-gray-300 hover:text-gray-400 transition-all duration-300" href="#">Blog</a></p> -->
-                        <p><a class="inline-flex gap-x-2 text-base text-gray-300 hover:text-gray-400 transition-all duration-300" href="/contactus.html">Contact</a></p>
+                        <div class="mt-6 grid space-y-3">
+                            <p><a class="inline-flex gap-x-2 text-base text-gray-300 hover:text-gray-400 transition-all duration-300" href="/">Home</a></p>
+                            <p><a class="inline-flex gap-x-2 text-base text-gray-300 hover:text-gray-400 transition-all duration-300" href="/aboutus.html">About us</a></p>
+                            <p><a class="inline-flex gap-x-2 text-base text-gray-300 hover:text-gray-400 transition-all duration-300" href="/contactus.html">Contact us</a></p>
+                            <p><a class="inline-flex gap-x-2 text-base text-gray-300 hover:text-gray-400 transition-all duration-300" href="/faq.html">FAQ</a></p>
+                            <p><a class="inline-flex gap-x-2 text-base text-gray-300 hover:text-gray-400 transition-all duration-300" href="/">KYC</a></p>
+
+
+                            <!-- <p><a class="inline-flex gap-x-2 text-base text-gray-300 hover:text-gray-400 transition-all duration-300" href="/#features">Services</a></p>
+                            <p><a class="inline-flex gap-x-2 text-base text-gray-300 hover:text-gray-400 transition-all duration-300" href="/algo-category/8.html">Portfolio</a></p>
+                            <p><a class="inline-flex gap-x-2 text-base text-gray-300 hover:text-gray-400 transition-all duration-300" href="/contactus.html">Contact</a></p> -->
+                        </div>
                     </div>
+
+                    
                 </div>
+
     
                 <div class="col-span-1">
-                    <h4 class="font-semibold text-gray-100 uppercase">Product</h4>
+                    <h4 class="font-semibold text-gray-100 uppercase">Our Services</h4>
         
                     <div class="mt-6 grid space-y-3">
-                        <p><a class="inline-flex gap-x-2 text-base text-gray-300 hover:text-gray-400 transition-all duration-300" href="/#features">Services</a></p>
+                        <!-- <p><a class="inline-flex gap-x-2 text-base text-gray-300 hover:text-gray-400 transition-all duration-300" href="/#features">Services</a></p>
                         <p><a class="inline-flex gap-x-2 text-base text-gray-300 hover:text-gray-400 transition-all duration-300" href="/aboutus.html">About Us</a></p>
                         <p><a class="inline-flex gap-x-2 text-base text-gray-300 hover:text-gray-400 transition-all duration-300" href="/risk.html">Risk</a></p>
-                        <p><a class="inline-flex gap-x-2 text-base text-gray-300 hover:text-gray-400 transition-all duration-300" href="/faq.html">FAQ</a></p>
+                        <p><a class="inline-flex gap-x-2 text-base text-gray-300 hover:text-gray-400 transition-all duration-300" href="/faq.html">FAQ</a></p> -->
+                        <p><a class="inline-flex gap-x-2 text-base text-gray-300 hover:text-gray-400 transition-all duration-300" href="/service-category/15.html">Cash</a></p>
+                        <p><a class="inline-flex gap-x-2 text-base text-gray-300 hover:text-gray-400 transition-all duration-300" href="/aboutus.html">Saving</a></p>
+                        <p><a class="inline-flex gap-x-2 text-base text-gray-300 hover:text-gray-400 transition-all duration-300" href="/service-category/17.html">Inter Option</a></p>
+                        <p><a class="inline-flex gap-x-2 text-base text-gray-300 hover:text-gray-400 transition-all duration-300" href="/service-sub-category/26.html">Stock Option</a></p>
+                        <p><a class="inline-flex gap-x-2 text-base text-gray-300 hover:text-gray-400 transition-all duration-300" href="/#">Short Selling</a></p>
+                        <p><a class="inline-flex gap-x-2 text-base text-gray-300 hover:text-gray-400 transition-all duration-300" href="/#">Hedge Selling</a></p>
                     </div>
                 </div>
 
                 <div class="col-span-1">
-                    <h4 class="font-semibold text-gray-100 uppercase">Important Links</h4>
+                    <h4 class="font-semibold text-gray-100 uppercase">Comliance</h4>
     
                     <div class="mt-6 grid space-y-3">
                         <p><a class="inline-flex gap-x-2 text-base text-gray-300 hover:text-gray-400 transition-all duration-300" href="/investor-charter.html">Investor Charter</a></p>

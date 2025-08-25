@@ -1,0 +1,52 @@
+.payment-container {
+      display: flex;
+      gap: 40px;
+      width: 100%;
+      justify-content: center;
+    }
+
+    .payment-container .bank-info {
+      border-collapse: collapse;
+      width: 100%;
+      max-width: 400px;
+    }
+
+    .payment-container .bank-info .row {
+      display: flex;
+    }
+
+    .payment-container .bank-info .label {
+      background: #2B70E5;
+      color: #fff;
+      font-weight: bold;
+      padding: 12px;
+      width: 40%;
+      text-transform: uppercase;
+    }
+
+    .payment-container .bank-info .value {
+      background: #fafafa;
+      padding: 12px;
+      width: 60%;
+      color: #444;
+      font-weight: 500;
+    }
+
+    .payment-container .qr-section {
+      text-align: center;
+      border: 1px solid #ddd;
+    }
+
+    .payment-container .qr-section img {
+      max-width: 300px;
+      height: auto;
+    }
+
+    .payment-container .logo {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .payment-container .logo img {
+      max-width: 220px;
+    }

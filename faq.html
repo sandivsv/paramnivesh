@@ -98,18 +98,18 @@
     <header class="header-area style-1">
       <div class="container-fluid container-rextfy d-flex flex-nowrap align-items-center justify-content-between">
         <div class="header-logo">
-          <a href="index-2.html"><img alt="image" class="img-fluid" src="public/webassets/image/new/paramLogo.png" /></a>
+          <a href="index.html"><img alt="image" class="img-fluid" src="public/webassets/image/new/paramLogo.png" /></a>
         </div>
         <div class="main-menu">
           <div class="mobile-logo-area d-lg-none d-flex justify-content-center">
             <div class="mobile-logo-wrap">
-              <a href="index-2.html"><img alt="image" class="img-fluid" src="public/webassets/image/new/paramLogo.png" /></a>
+              <a href="index.html"><img alt="image" class="img-fluid" src="public/webassets/image/new/paramLogo.png" /></a>
             </div>
           </div>
           <ul class="menu-list">
               
               <li class="">
-    <a href="index-2.html" class="drop-down">Home</a>
+    <a href="index.html" class="drop-down">Home</a>
 </li>
 
 <li class="">
@@ -127,16 +127,37 @@
 </li>
 
            
-                             <li class="">
+<li class="">
     <a href="complaint-data.html" class="drop-down">Complaint data</a>
 </li>
 
-                         <li class="">
-    <a href="grievance-redressal-framework.html" class="drop-down">Grievance Redressal Framework</a>
+<li class="">
+    <a href="grievance-redressal-framework.html" class="drop-down">Grievance Redressal Policy</a>
+</li>
+
+<li class="">
+    <a href="privacy-policy.html" class="drop-down">Privacy Policy</a>
+</li>
+
+<li class="">
+    <a href="refund-policy.html" class="drop-down">Refund Policy</a>
+</li>
+<li class="">
+    <a href="term.html" class="drop-down">Terms & Conditions</a>
+</li>
+<li class="">
+    <a href="standard-warnings.html" class="drop-down">Standard Warnings</a>
+</li>
+<li class="">
+    <a href="other-information.html" class="drop-down">Other Information</a>
 </li>
 
                          <li class="">
-    <a href="disclaimer.html" class="drop-down">Disclaimer and Disclosure</a>
+    <a href="disclaimer.html" class="drop-down">Disclaimer</a>
+</li>
+
+<li class="">
+    <a href="disclosure.html" class="drop-down">Disclosure</a>
 </li>
 
 
@@ -167,12 +188,12 @@
 
             
                                   <li class="">
-    <a href="subscribe.html" class="drop-down">Subscribe</a>
+    <a href="subscribe.html" class="drop-down">Pricing</a>
 </li>
 
 
 
-<li class="menu-item-has-children">
+<!-- <li class="menu-item-has-children">
   <a href="#" class="drop-down">Algorithm</a>
   <i class="bi bi-plus dropdown-icon"></i>
   <ul class="sub-menu">
@@ -182,7 +203,7 @@
         </a>
       </li>
       </ul>
-</li>
+</li> -->
 
 
        
@@ -258,78 +279,6 @@
       <script src="../code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
 
-$(document).ready(function () {
-  $('#getintouchform').on('submit', function (e) {
-    e.preventDefault();
-    $('.error').remove();
-
-    let isValid = true;
-
-    const fullName = $('#fullname').val().trim();
-    const email = $('#email').val().trim();
-    const phone = $('#phone').val().trim();
-    const message = $('#mesage').val().trim();
-
-    if (!fullName) {
-
-      $('#fullname').after('<span class="error mb-3" style="color: red; display: block;">Full Name is required</span>');
-      isValid = false;
-    }
-
-    if (!email) {
- 
-      $('#email').after('<span class="error mb-3" style="color: red; display: block;">Email is required</span>');
-      isValid = false;
-    }
-if (!phone) {
-  
-  $('#phone').after('<span class="error mb-3" style="color: red; display: block;">Phone is required</span>');
-  isValid = false;
-} else if (!/^\d{10}$/.test(phone)) {
-  
-  $('#phone').after('<span class="error mb-3" style="color: red; display: block;">Enter a valid 10-digit phone number</span>');
-  isValid = false;
-}
-
-
-    if (!message) {
-    
-      $('#mesage').after('<span class="error mb-3" style="color: red; display: block;">Message is required</span>');
-      isValid = false;
-    }
-
-    if (!isValid) return;
-
-    const formData = new FormData();
-    formData.append('fullname', fullName);
-    formData.append('email', email);
-    formData.append('phone', phone);
-    formData.append('mesage', message);
-    formData.append('_token', 'pQvhpi6XYxDMa2evRaif1ubRpkrohnsMCIhYWbj0'); // Laravel CSRF
-
-    $.ajax({
-      url: "https://paramnivesh.com/requestformaction", // Update to correct route
-      method: "POST",
-      data: formData,
-      processData: false,
-      contentType: false,
-      success: function (response) {
-        $('#responseMessage').html('<div class="alert alert-success">' + response.message + '</div>');
-        $('#getintouchform')[0].reset();
-        // Optional: redirect
-   location.reload();
-      },
-      error: function (xhr) {
-        let error = 'Something went wrong.';
-        if (xhr.status === 422 && xhr.responseJSON && xhr.responseJSON.message) {
-          error = xhr.responseJSON.message;
-        }
-        $('#responseMessage').html('<div class="alert alert-danger">' + error + '</div>');
-      }
-    });
-  });
-});
-
 </script>
 
 
@@ -346,7 +295,7 @@ if (!phone) {
                     <div class="breadcrumb-list">
                       <ul>
                         <li>
-                          <a href="index-2.html">Home</a>
+                          <a href="index.html">Home</a>
                         </li>
                         <li><span>/</span></li>
                         <li>
@@ -377,52 +326,353 @@ if (!phone) {
           </div>
         </div>
       </div>
-      <div class="nav-button-wrapper">
-        <div class="row gy-5">
-          <div class="col-lg-12">
-                <div class="faq-area">
-                  <div class="faq-wrap style-2">
-                    <div class="accordion accordion-flush" id="accordionFlushExample1">
+      <div id="accordion-collapse" data-accordion="collapse" class="md:gap-[30px] mt-14 bg-white rounded-xl">
+                    <div class="hs-accordion-group divide-y divide-gray-200">
+                        <div class="relative overflow-hidden">
+                            <h2 class="text-base font-semibold" id="accordion-collapse-heading-1">
+                                <button type="button"
+                                    class="flex justify-between items-center px-5 py-4 w-full font-semibold text-lg text-start"
+                                    data-accordion-target="#accordion-collapse-body-1" aria-expanded="true"
+                                    aria-controls="accordion-collapse-body-1">
+                                    <span>1. Is Param Nivesh SEBI-registered?</span>
+                                    <svg data-accordion-icon class="size-4 rotate-180 shrink-0" fill="currentColor"
+                                        viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                </button>
+                            </h2>
+                            <div id="accordion-collapse-body-1" class="hidden"
+                                aria-labelledby="accordion-collapse-heading-1">
+                                <div class="px-5 pb-5">
+                                    <p class="text-muted text-base font-normal">
+                                        Yes ✅. Param Nivesh by Inderjeet Singh is a SEBI-registered Research Analyst (Registration No. INH000016144).
+                                    This ensures compliance with SEBI’s regulations. However, SEBI registration does not guarantee returns; it only ensures a transparent and regulated framework.
 
-                   <div class="accordion-item">
-    <h5 class="accordion-header" id="flush-headingOne0">
-      <button class="accordion-button " type="button" data-bs-toggle="collapse"
-        data-bs-target="#flush-collapseOne0" aria-expanded="true"
-        aria-controls="flush-collapseOne0">
-        1. What Are The Mode Of Payments?
-      </button>
-    </h5>
-    <div id="flush-collapseOne0" class="accordion-collapse collapse show"
-      aria-labelledby="flush-headingOne0" data-bs-parent="#accordionFlushExample1">
-      <div class="accordion-body">
-        We accept Cheque deposit &amp;amp;amp; online payments through (NEFT/IMPS) you can through UPI.
-      </div>
-    </div>
-  </div>
-  <div class="accordion-item">
-    <h5 class="accordion-header" id="flush-headingOne1">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-        data-bs-target="#flush-collapseOne1" aria-expanded="false"
-        aria-controls="flush-collapseOne1">
-        2. How Do You Give Calls?
-      </button>
-    </h5>
-    <div id="flush-collapseOne1" class="accordion-collapse collapse "
-      aria-labelledby="flush-headingOne1" data-bs-parent="#accordionFlushExample1">
-      <div class="accordion-body">
-        All calls are given by SMS only. Refer to the following Abbreviations used in our calls: SL &amp;ndash;Stop Loss. TG &amp;ndash; Target. CMP &amp;ndash; Current Market Price.
-      </div>
-    </div>
-  </div>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="relative overflow-hidden">
+                            <h2 class="text-base font-semibold" id="accordion-collapse-heading-2">
+                                <button type="button"
+                                    class="flex justify-between items-center px-5 py-4 w-full font-semibold text-lg text-start"
+                                    data-accordion-target="#accordion-collapse-body-2" aria-expanded="false"
+                                    aria-controls="accordion-collapse-body-2">
+                                    <span>2. What packages/plans do you offer?</span>
+                                    <svg data-accordion-icon class="size-4 shrink-0" fill="currentColor"
+                                        viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                </button>
+                            </h2>
+                            <div id="accordion-collapse-body-2" class="hidden"
+                                aria-labelledby="accordion-collapse-heading-2">
+                                <div class="px-5 pb-5">
+                                    <div class="text-muted text-base font-normal">
+                                        <b>A) Swing Trade (Cash)</b> – Minimum 2 trade ideas daily, holding period: 1 week–1 month
+                                    </div>
+
+                                    <div class="text-muted text-base font-normal">
+                                        <b>B) Long Term Investment</b> – 4–5 detailed reports/month, holding period: 6 months–1 year+
+                                    </div>
+                                    <div class="text-muted text-base font-normal">
+                                        <b>C) Index Option (Intraday)</b> – 2–3 Nifty/Bank Nifty setups daily, holding period: Intraday
+                                    </div>
+                                    <div class="text-muted text-base font-normal">
+                                        <b>D) Stock Option</b> – Calls & puts in stock-specific options, holding period: intraday–short term
+                                    </div>
+                                    <div class="text-muted text-base font-normal">
+                                        <b>E) Short Selling</b> – Research-based opportunities in weak stocks/sectors
+                                    </div>
+                                    <div class="text-muted text-base font-normal">
+                                        <b>F) Hedged Selling (Options Strategies)</b> – Spreads, straddles, strangles for risk-managed trades
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="relative overflow-hidden">
+                            <h2 class="text-base font-semibold" id="accordion-collapse-heading-3">
+                                <button type="button"
+                                    class="flex justify-between items-center px-5 py-4 w-full font-semibold text-lg text-start"
+                                    data-accordion-target="#accordion-collapse-body-3" aria-expanded="false"
+                                    aria-controls="accordion-collapse-body-3">
+                                    <span>3. Do you provide investment advice or portfolio management services?</span>
+                                    <svg data-accordion-icon class="size-4 shrink-0" fill="currentColor"
+                                        viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                </button>
+                            </h2>
+                            <div id="accordion-collapse-body-3" class="hidden"
+                                aria-labelledby="accordion-collapse-heading-3">
+                                <div class="px-5 pb-5">
+                                    <div class="text-muted text-base font-normal">
+                                        <div>No ❌.</div>
+                                        We do not manage client funds or provide personalized portfolio management.
+                                        We only provide research, trade setups, and reports for clients to act upon in their own accounts.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="relative overflow-hidden">
+                            <h2 class="text-base font-semibold" id="accordion-collapse-heading-4">
+                                <button type="button"
+                                    class="flex justify-between items-center px-5 py-4 w-full font-semibold text-lg text-start"
+                                    data-accordion-target="#accordion-collapse-body-4" aria-expanded="false"
+                                    aria-controls="accordion-collapse-body-4">
+                                    <span>4. What kind of research will I get after payment?</span>
+                                    <svg data-accordion-icon class="size-4 shrink-0" fill="currentColor"
+                                        viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                </button>
+                            </h2>
+                            <div id="accordion-collapse-body-4" class="hidden"
+                                aria-labelledby="accordion-collapse-heading-4">
+                                <div class="px-5 pb-5">
+                                    <div class="text-muted text-base font-normal">
+                                        <b>Research reports </b>for long-term investment opportunities
+                                    </div>
+
+                                    <div class="text-muted text-base font-normal">
+                                        <b>Swing, intraday, and options trade setups </b> with entry, stop-loss, and targe
+                                    </div>
+                                    <div class="text-muted text-base font-normal">
+                                        <b>Special strategy ideas </b> like hedging and short selling
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="relative overflow-hidden">
+                            <h2 class="text-base font-semibold" id="accordion-collapse-heading-5">
+                                <button type="button"
+                                    class="flex justify-between items-center px-5 py-4 w-full font-semibold text-lg text-start"
+                                    data-accordion-target="#accordion-collapse-body-5" aria-expanded="false"
+                                    aria-controls="accordion-collapse-body-4">
+                                    <span>5. How will I receive the research?</span>
+                                    <svg data-accordion-icon class="size-4 shrink-0" fill="currentColor"
+                                        viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                </button>
+                            </h2>
+                            <div id="accordion-collapse-body-5" class="hidden"
+                                aria-labelledby="accordion-collapse-heading-5">
+                                <div class="px-5 pb-5">
+                                    <div class="text-muted text-base font-normal">
+                                        <div>You will receive our research:</div>
+                                        <div class="font-semibold" style="padding-left: 10px;" >
+                                            <div>
+                                                <b>Through Telegram groups or direct messages (for live calls)</b>
+                                            </div>
+                                            <div>
+                                                <b>In PDF format (for detailed research reports)</b>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="relative overflow-hidden">
+                            <h2 class="text-base font-semibold" id="accordion-collapse-heading-6">
+                                <button type="button"
+                                    class="flex justify-between items-center px-5 py-4 w-full font-semibold text-lg text-start"
+                                    data-accordion-target="#accordion-collapse-body-6" aria-expanded="false"
+                                    aria-controls="accordion-collapse-body-5">
+                                    <span>6. How do I make payments?</span>
+                                    <svg data-accordion-icon class="size-4 shrink-0" fill="currentColor"
+                                        viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                </button>
+                            </h2>
+                            <div id="accordion-collapse-body-6" class="hidden"
+                                aria-labelledby="accordion-collapse-heading-6">
+                                <div class="px-5 pb-5">
+                                    <div class="text-muted text-base font-normal">
+                                        <div>
+                                            All payments must be made <b>only to the official Param Nivesh account</b>, the details of which are provided on our official website paramnivesh.com.
+                                        </div>
+                                        <div>
+                                            <b>⚠️ Important: </b>If payment is made to any account other than the official Param Nivesh account, we will not be responsible for such transactions.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="relative overflow-hidden">
+                            <h2 class="text-base font-semibold" id="accordion-collapse-heading-7">
+                                <button type="button"
+                                    class="flex justify-between items-center px-5 py-4 w-full font-semibold text-lg text-start"
+                                    data-accordion-target="#accordion-collapse-body-7" aria-expanded="false"
+                                    aria-controls="accordion-collapse-body-6">
+                                    <span>7. Are there any guarantees of profit?</span>
+                                    <svg data-accordion-icon class="size-4 shrink-0" fill="currentColor"
+                                        viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                </button>
+                            </h2>
+                            <div id="accordion-collapse-body-7" class="hidden"
+                                aria-labelledby="accordion-collapse-heading-7">
+                                <div class="px-5 pb-5">
+                                    <div class="text-muted text-base font-normal">
+                                        <div>No ❌.</div>
+                                        Stock market investments are risky. While we aim for high accuracy, past performance does not guarantee future results.
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="relative overflow-hidden">
+                            <h2 class="text-base font-semibold" id="accordion-collapse-heading-9">
+                                <button type="button"
+                                    class="flex justify-between items-center px-5 py-4 w-full font-semibold text-lg text-start"
+                                    data-accordion-target="#accordion-collapse-body-9" aria-expanded="false"
+                                    aria-controls="accordion-collapse-body-8">
+                                    <span>8. Can I get a refund after payment?</span>
+                                    <svg data-accordion-icon class="size-4 shrink-0" fill="currentColor"
+                                        viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                </button>
+                            </h2>
+                            <div id="accordion-collapse-body-9" class="hidden"
+                                aria-labelledby="accordion-collapse-heading-9">
+                                <div class="px-5 pb-5">
+                                    <div class="text-muted text-base font-normal">
+                                        
+                                        <div>No ❌.</div>
+                                        As our research is digital and market-sensitive, no refunds are possible once access is provided.
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="relative overflow-hidden">
+                            <h2 class="text-base font-semibold" id="accordion-collapse-heading-10">
+                                <button type="button"
+                                    class="flex justify-between items-center px-5 py-4 w-full font-semibold text-lg text-start"
+                                    data-accordion-target="#accordion-collapse-body-10" aria-expanded="false"
+                                    aria-controls="accordion-collapse-body-9">
+                                    <span>9. Do I need a trading account to act on your research?</span>
+                                    <svg data-accordion-icon class="size-4 shrink-0" fill="currentColor"
+                                        viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                </button>
+                            </h2>
+                            <div id="accordion-collapse-body-10" class="hidden"
+                                aria-labelledby="accordion-collapse-heading-10">
+                                <div class="px-5 pb-5">
+                                    <div class="text-muted text-base font-normal">
+                                        <div>Yes ✅.</div>
+You must have your own demat/trading account with a SEBI-registered broker. We do not execute trades on your behalf.
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="relative overflow-hidden">
+                            <h2 class="text-base font-semibold" id="accordion-collapse-heading-11">
+                                <button type="button"
+                                    class="flex justify-between items-center px-5 py-4 w-full font-semibold text-lg text-start"
+                                    data-accordion-target="#accordion-collapse-body-11" aria-expanded="false"
+                                    aria-controls="accordion-collapse-body-10">
+                                    <span>10. Are there risks involved?</span>
+                                    <svg data-accordion-icon class="size-4 shrink-0" fill="currentColor"
+                                        viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                </button>
+                            </h2>
+                            <div id="accordion-collapse-body-11" class="hidden"
+                                aria-labelledby="accordion-collapse-heading-11">
+                                <div class="px-5 pb-5">
+                                    <div class="text-muted text-base font-normal">
+                                        <div>Yes ✅.</div>
+                                        <div>
+                                            <div>
+                                                All trading styles — intraday, swing, options, hedging, and long-term — carry risks, including loss of capital. We advise clients to:
+                                            </div>
+                                            <div>Trade with discipline and strict stop-loss</div>
+                                            <div>Use correct position sizing</div>
+                                            <div>Risk only what you can afford to lose</div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="relative overflow-hidden">
+                            <h2 class="text-base font-semibold" id="accordion-collapse-heading-12">
+                                <button type="button"
+                                    class="flex justify-between items-center px-5 py-4 w-full font-semibold text-lg text-start"
+                                    data-accordion-target="#accordion-collapse-body-12" aria-expanded="false"
+                                    aria-controls="accordion-collapse-body-11">
+                                    <span>11. How can I contact Param Nivesh?</span>
+                                    <svg data-accordion-icon class="size-4 shrink-0" fill="currentColor"
+                                        viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                </button>
+                            </h2>
+                            <div id="accordion-collapse-body-12" class="hidden"
+                                aria-labelledby="accordion-collapse-heading-12">
+                                <div class="px-5 pb-5">
+                                    <div class="text-muted text-base font-normal">
+                                        <div>
+                                            📞 Phone: <a href="tel:+91 9993830999">9993830999</a>
+                                        </div>
+                                        <div>
+                                            📧 Email: <a href="mailto:support@paramnivesh.com">support@paramnivesh.com</a>
+                                        </div>
+                                        <div>
+                                            🌐 Website: <a href="#">paramnivesh.com</a>
+                                        </div>
+                                        <div>
+                                            📱 Telegram group access: Shared after subscription
+                                        </div>
 
 
-
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                  </div>
                 </div>
-          </div>
-        </div>
-      </div>
     </div>
   </div>
   
@@ -452,34 +702,54 @@ if (!phone) {
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
                             +91 9993830999
                         </a>
+                        <a class="inline-flex items-center gap-x-2 text-gray-300 hover:text-gray-400 transition-all duration-300" href="tel:+91 9993830999">
+                            <span>Reg. No. -</span>
+                            <span>INH000016144</span>
+                        </a>
                     </div>
                 </div>
 
-                <div class="col-span-1">
-                    <h4 class="font-semibold text-gray-100 uppercase">Company</h4>
+                <div class="col-span-1 grid grid-cols-2">
+                    <div>
+                        <h4 class="font-semibold text-gray-100 uppercase">Company</h4>
     
-                    <div class="mt-6 grid space-y-3">
-                        <p><a class="inline-flex gap-x-2 text-base text-gray-300 hover:text-gray-400 transition-all duration-300" href="/aboutus.html">About</a></p>
-                        <p><a class="inline-flex gap-x-2 text-base text-gray-300 hover:text-gray-400 transition-all duration-300" href="/#features">Services</a></p>
-                        <p><a class="inline-flex gap-x-2 text-base text-gray-300 hover:text-gray-400 transition-all duration-300" href="/algo-category/8.html">Portfolio</a></p>
-                        <!-- <p><a class="inline-flex gap-x-2 text-base text-gray-300 hover:text-gray-400 transition-all duration-300" href="#">Blog</a></p> -->
-                        <p><a class="inline-flex gap-x-2 text-base text-gray-300 hover:text-gray-400 transition-all duration-300" href="/contactus.html">Contact</a></p>
+                        <div class="mt-6 grid space-y-3">
+                            <p><a class="inline-flex gap-x-2 text-base text-gray-300 hover:text-gray-400 transition-all duration-300" href="/">Home</a></p>
+                            <p><a class="inline-flex gap-x-2 text-base text-gray-300 hover:text-gray-400 transition-all duration-300" href="/aboutus.html">About us</a></p>
+                            <p><a class="inline-flex gap-x-2 text-base text-gray-300 hover:text-gray-400 transition-all duration-300" href="/contactus.html">Contact us</a></p>
+                            <p><a class="inline-flex gap-x-2 text-base text-gray-300 hover:text-gray-400 transition-all duration-300" href="/faq.html">FAQ</a></p>
+                            <p><a class="inline-flex gap-x-2 text-base text-gray-300 hover:text-gray-400 transition-all duration-300" href="/">KYC</a></p>
+
+
+                            <!-- <p><a class="inline-flex gap-x-2 text-base text-gray-300 hover:text-gray-400 transition-all duration-300" href="/#features">Services</a></p>
+                            <p><a class="inline-flex gap-x-2 text-base text-gray-300 hover:text-gray-400 transition-all duration-300" href="/algo-category/8.html">Portfolio</a></p>
+                            <p><a class="inline-flex gap-x-2 text-base text-gray-300 hover:text-gray-400 transition-all duration-300" href="/contactus.html">Contact</a></p> -->
+                        </div>
                     </div>
+
+                    
                 </div>
+
     
                 <div class="col-span-1">
-                    <h4 class="font-semibold text-gray-100 uppercase">Product</h4>
+                    <h4 class="font-semibold text-gray-100 uppercase">Our Services</h4>
         
                     <div class="mt-6 grid space-y-3">
-                        <p><a class="inline-flex gap-x-2 text-base text-gray-300 hover:text-gray-400 transition-all duration-300" href="/#features">Services</a></p>
+                        <!-- <p><a class="inline-flex gap-x-2 text-base text-gray-300 hover:text-gray-400 transition-all duration-300" href="/#features">Services</a></p>
                         <p><a class="inline-flex gap-x-2 text-base text-gray-300 hover:text-gray-400 transition-all duration-300" href="/aboutus.html">About Us</a></p>
                         <p><a class="inline-flex gap-x-2 text-base text-gray-300 hover:text-gray-400 transition-all duration-300" href="/risk.html">Risk</a></p>
-                        <p><a class="inline-flex gap-x-2 text-base text-gray-300 hover:text-gray-400 transition-all duration-300" href="/faq.html">FAQ</a></p>
+                        <p><a class="inline-flex gap-x-2 text-base text-gray-300 hover:text-gray-400 transition-all duration-300" href="/faq.html">FAQ</a></p> -->
+                        <p><a class="inline-flex gap-x-2 text-base text-gray-300 hover:text-gray-400 transition-all duration-300" href="/service-category/15.html">Cash</a></p>
+                        <p><a class="inline-flex gap-x-2 text-base text-gray-300 hover:text-gray-400 transition-all duration-300" href="/aboutus.html">Saving</a></p>
+                        <p><a class="inline-flex gap-x-2 text-base text-gray-300 hover:text-gray-400 transition-all duration-300" href="/service-category/17.html">Inter Option</a></p>
+                        <p><a class="inline-flex gap-x-2 text-base text-gray-300 hover:text-gray-400 transition-all duration-300" href="/service-sub-category/26.html">Stock Option</a></p>
+                        <p><a class="inline-flex gap-x-2 text-base text-gray-300 hover:text-gray-400 transition-all duration-300" href="/#">Short Selling</a></p>
+                        <p><a class="inline-flex gap-x-2 text-base text-gray-300 hover:text-gray-400 transition-all duration-300" href="/#">Hedge Selling</a></p>
                     </div>
                 </div>
 
                 <div class="col-span-1">
-                    <h4 class="font-semibold text-gray-100 uppercase">Important Links</h4>
+                    <h4 class="font-semibold text-gray-100 uppercase">Comliance</h4>
     
                     <div class="mt-6 grid space-y-3">
                         <p><a class="inline-flex gap-x-2 text-base text-gray-300 hover:text-gray-400 transition-all duration-300" href="/investor-charter.html">Investor Charter</a></p>
@@ -629,80 +899,3 @@ if (!phone) {
     </div>
   </div>
 </div>
-
-<script>
-$(document).ready(function () {
-  $('#getintouchformpay').on('submit', function (e) {
-    e.preventDefault();
-    $('.error').remove();
-
-    let isValid = true;
-
-    const fullnamepay = $('#fullnamepay').val().trim();
-    const emailpay = $('#emailpay').val().trim();
-    const phonepay = $('#phonepay').val().trim();
-    const amountpay = $('#amountpay').val().trim();
-
-    if (!fullnamepay) {
-
-      $('#fullnamepay').after('<span class="error mb-3" style="color: red; display: block;">Full Name is required</span>');
-      isValid = false;
-    }
-
-    if (!emailpay) {
- 
-      $('#emailpay').after('<span class="error mb-3" style="color: red; display: block;">Email is required</span>');
-      isValid = false;
-    }
-if (!phonepay) {
-  
-  $('#phonepay').after('<span class="error mb-3" style="color: red; display: block;">Phone is required</span>');
-  isValid = false;
-} else if (!/^\d{10}$/.test(phonepay)) {
-  
-  $('#phonepay').after('<span class="error mb-3" style="color: red; display: block;">Enter a valid 10-digit phone number</span>');
-  isValid = false;
-}
-
-
-    if (!amountpay) {
-    
-      $('#amountpay').after('<span class="error mb-3" style="color: red; display: block;">Amount is required</span>');
-      isValid = false;
-    }
-
-    if (!isValid) return;
-    const formData = new FormData();
-    formData.append('fullnamepay', fullnamepay);
-    formData.append('emailpay', emailpay);
-    formData.append('phonepay', phonepay);
-    formData.append('amountpay', amountpay);
-    formData.append('_token', 'pQvhpi6XYxDMa2evRaif1ubRpkrohnsMCIhYWbj0'); // Laravel CSRF
-
-    $.ajax({
-      url: "https://paramnivesh.com/payumoney", // Update to correct route
-      method: "POST",
-      data: formData,
-      processData: false,
-      contentType: false,
-      success: function (response) {
-  if (response.status === 'success') {
-    // Inject PayU form into the DOM
-    $('body').append(response.form);
-    $('#payuForm').submit();
-  } else {
-    $('#responseMessage').html('<div class="alert alert-danger">' + response.message + '</div>');
-  }
-      },
-      error: function (xhr) {
-        let error = 'Something went wrong.';
-        if (xhr.status === 422 && xhr.responseJSON && xhr.responseJSON.message) {
-          error = xhr.responseJSON.message;
-        }
-        $('#responseMessage').html('<div class="alert alert-danger">' + error + '</div>');
-      }
-    });
-  });
-});
-
-</script>
